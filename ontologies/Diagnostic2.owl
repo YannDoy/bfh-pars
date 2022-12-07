@@ -1,0 +1,643 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/souhir/ontologies/diagnostic"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/souhir/ontologies/diagnostic">
+    <Prefix name="" IRI="http://www.semanticweb.org/souhir/ontologies/diagnostic"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#ABCES_PULMONAIRE_EXTRA_HOSPITALIER"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Anaerobes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cap1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cap2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cap3"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cap4"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Chlamydia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Clostridium_difficile"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Diagnostic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EMPYEME_PLEURAL_EXTRA_HOSPITALIER"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EXACERBATION_DE_BRONCHITE_CHRONIQUE_CHEZ_BRONCHITEUX_SEVERE"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Enterobacteria"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Enterococci"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Enterrococcus_faecalis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Enterrococcus_faecium"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Flore_mixte_guideline"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Germes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gram_Negative"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gram_positive"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Haemophilus_influenza"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Infections_de_l_appareil_digestif"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Infections_de_la_sphere_ORL"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Infections_des_tessus_mous"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Infections_des_voies_respiratoires"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Infections_des_voies_respiratoires_basses_intra_hospitalieres"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Infections_des_voies_urinaires"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Klebs_pneumo_guideline"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Legionella_SP"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Listeria_monocytogenes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Moraxella"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mycoplasma"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Neisseria_gnorrhoeae"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Nocardia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Organe"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PNEUMONIE_ACQUISE_DANS_LA_COMMUNAUTE_CAP"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PNEUMONIE_DE_FAUSSE_DEGLUTITION_EXTRA_HOSPITALIERE"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PNEUMONIE_INTRA_HOSPITALIERE_HAP_AVEC_ANTIBIOTHERAPIE_PREALABLE_OU_AU_RESPIRATEUR_VAP"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PNEUMONIE_INTRA_HOSPITALIERE_HAP_SANS_ANTIBIOTHERAPIE_PREALABLE"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pneumocystis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pseudomonas_aeruginosa"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Spirochete"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Staphylococcus_aureus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Staphylococcus_epidermidis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Staphylocoques_dore_guideline"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Streptococcus_pneumiae"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Streptocoques_Guideline"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vibrio_Cholerae"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#syphilis"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Cause"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Est_cause_par"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#ABCES_PULMONAIRE_EXTRA_HOSPITALIER"/>
+        <Class IRI="#Infections_des_voies_respiratoires"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ABCES_PULMONAIRE_EXTRA_HOSPITALIER"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Est_cause_par"/>
+            <Class IRI="#Anaerobes"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Vérifier équivalence</Literal>
+        </Annotation>
+        <Class IRI="#ABCES_PULMONAIRE_EXTRA_HOSPITALIER"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Est_cause_par"/>
+            <Class IRI="#Flore_mixte_guideline"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Anaerobes"/>
+        <Class IRI="#Germes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cap1"/>
+        <Class IRI="#PNEUMONIE_ACQUISE_DANS_LA_COMMUNAUTE_CAP"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cap2"/>
+        <Class IRI="#PNEUMONIE_ACQUISE_DANS_LA_COMMUNAUTE_CAP"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cap2"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Est_cause_par"/>
+            <Class IRI="#Haemophilus_influenza"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cap3"/>
+        <Class IRI="#PNEUMONIE_ACQUISE_DANS_LA_COMMUNAUTE_CAP"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Vérifier l&apos;équivalence</Literal>
+        </Annotation>
+        <Class IRI="#Cap3"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Est_cause_par"/>
+            <Class IRI="#Enterobacteria"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cap3"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Est_cause_par"/>
+            <Class IRI="#Haemophilus_influenza"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cap3"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Est_cause_par"/>
+            <Class IRI="#Staphylococcus_aureus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cap4"/>
+        <Class IRI="#PNEUMONIE_ACQUISE_DANS_LA_COMMUNAUTE_CAP"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cap4"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Est_cause_par"/>
+            <Class IRI="#Haemophilus_influenza"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cap4"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Est_cause_par"/>
+            <Class IRI="#Legionella_SP"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cap4"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Est_cause_par"/>
+            <Class IRI="#Mycoplasma"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chlamydia"/>
+        <Class IRI="#Germes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Clostridium_difficile"/>
+        <Class IRI="#Germes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EMPYEME_PLEURAL_EXTRA_HOSPITALIER"/>
+        <Class IRI="#Infections_des_voies_respiratoires"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EMPYEME_PLEURAL_EXTRA_HOSPITALIER"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Est_cause_par"/>
+            <Class IRI="#Anaerobes"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Vérifier équivalence</Literal>
+        </Annotation>
+        <Class IRI="#EMPYEME_PLEURAL_EXTRA_HOSPITALIER"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Est_cause_par"/>
+            <Class IRI="#Flore_mixte_guideline"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EXACERBATION_DE_BRONCHITE_CHRONIQUE_CHEZ_BRONCHITEUX_SEVERE"/>
+        <Class IRI="#Infections_des_voies_respiratoires"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EXACERBATION_DE_BRONCHITE_CHRONIQUE_CHEZ_BRONCHITEUX_SEVERE"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Est_cause_par"/>
+            <Class IRI="#Haemophilus_influenza"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Vérifier l&apos;équivalence avec un autre germe</Literal>
+        </Annotation>
+        <Class IRI="#EXACERBATION_DE_BRONCHITE_CHRONIQUE_CHEZ_BRONCHITEUX_SEVERE"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Est_cause_par"/>
+            <Class IRI="#Moraxella"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EXACERBATION_DE_BRONCHITE_CHRONIQUE_CHEZ_BRONCHITEUX_SEVERE"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Est_cause_par"/>
+            <Class IRI="#Streptococcus_pneumiae"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Enterobacteria"/>
+        <Class IRI="#Germes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Enterococci"/>
+        <Class IRI="#Germes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Enterrococcus_faecalis"/>
+        <Class IRI="#Germes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Enterrococcus_faecium"/>
+        <Class IRI="#Germes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Flore_mixte_guideline"/>
+        <Class IRI="#Germes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gram_Negative"/>
+        <Class IRI="#Germes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gram_positive"/>
+        <Class IRI="#Germes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Haemophilus_influenza"/>
+        <Class IRI="#Germes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Infections_de_l_appareil_digestif"/>
+        <Class IRI="#Diagnostic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Infections_de_la_sphere_ORL"/>
+        <Class IRI="#Diagnostic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Infections_des_tessus_mous"/>
+        <Class IRI="#Diagnostic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Infections_des_voies_respiratoires"/>
+        <Class IRI="#Diagnostic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Infections_des_voies_respiratoires_basses_intra_hospitalieres"/>
+        <Class IRI="#Infections_des_voies_respiratoires"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Infections_des_voies_respiratoires_basses_intra_hospitalieres"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Est_cause_par"/>
+            <Class IRI="#Enterobacteria"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Infections_des_voies_respiratoires_basses_intra_hospitalieres"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Est_cause_par"/>
+            <Class IRI="#Haemophilus_influenza"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Infections_des_voies_respiratoires_basses_intra_hospitalieres"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Est_cause_par"/>
+            <Class IRI="#Staphylococcus_aureus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Infections_des_voies_respiratoires_basses_intra_hospitalieres"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Est_cause_par"/>
+            <Class IRI="#Streptococcus_pneumiae"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Infections_des_voies_respiratoires_basses_intra_hospitalieres"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Est_cause_par"/>
+            <Class IRI="#Streptocoques_Guideline"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Infections_des_voies_urinaires"/>
+        <Class IRI="#Diagnostic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Klebs_pneumo_guideline"/>
+        <Class IRI="#Germes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Legionella_SP"/>
+        <Class IRI="#Germes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Listeria_monocytogenes"/>
+        <Class IRI="#Germes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Moraxella"/>
+        <Class IRI="#Germes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mycoplasma"/>
+        <Class IRI="#Germes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Neisseria_gnorrhoeae"/>
+        <Class IRI="#Germes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Nocardia"/>
+        <Class IRI="#Germes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PNEUMONIE_ACQUISE_DANS_LA_COMMUNAUTE_CAP"/>
+        <Class IRI="#Infections_des_voies_respiratoires"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PNEUMONIE_ACQUISE_DANS_LA_COMMUNAUTE_CAP"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Est_cause_par"/>
+            <Class IRI="#Streptococcus_pneumiae"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PNEUMONIE_DE_FAUSSE_DEGLUTITION_EXTRA_HOSPITALIERE"/>
+        <Class IRI="#Infections_des_voies_respiratoires"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PNEUMONIE_DE_FAUSSE_DEGLUTITION_EXTRA_HOSPITALIERE"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Est_cause_par"/>
+            <Class IRI="#Enterobacteria"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PNEUMONIE_DE_FAUSSE_DEGLUTITION_EXTRA_HOSPITALIERE"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Est_cause_par"/>
+            <Class IRI="#Haemophilus_influenza"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>vérifier équivalence</Literal>
+        </Annotation>
+        <Class IRI="#PNEUMONIE_DE_FAUSSE_DEGLUTITION_EXTRA_HOSPITALIERE"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Est_cause_par"/>
+            <Class IRI="#Staphylococcus_aureus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PNEUMONIE_DE_FAUSSE_DEGLUTITION_EXTRA_HOSPITALIERE"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Est_cause_par"/>
+            <Class IRI="#Streptococcus_pneumiae"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Vérifier equivalence</Literal>
+        </Annotation>
+        <Class IRI="#PNEUMONIE_DE_FAUSSE_DEGLUTITION_EXTRA_HOSPITALIERE"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Est_cause_par"/>
+            <Class IRI="#Streptocoques_Guideline"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PNEUMONIE_INTRA_HOSPITALIERE_HAP_AVEC_ANTIBIOTHERAPIE_PREALABLE_OU_AU_RESPIRATEUR_VAP"/>
+        <Class IRI="#Infections_des_voies_respiratoires_basses_intra_hospitalieres"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PNEUMONIE_INTRA_HOSPITALIERE_HAP_AVEC_ANTIBIOTHERAPIE_PREALABLE_OU_AU_RESPIRATEUR_VAP"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Est_cause_par"/>
+            <Class IRI="#Pseudomonas_aeruginosa"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PNEUMONIE_INTRA_HOSPITALIERE_HAP_SANS_ANTIBIOTHERAPIE_PREALABLE"/>
+        <Class IRI="#Infections_des_voies_respiratoires_basses_intra_hospitalieres"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pneumocystis"/>
+        <Class IRI="#Germes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pseudomonas_aeruginosa"/>
+        <Class IRI="#Germes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Spirochete"/>
+        <Class IRI="#Germes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Staphylococcus_aureus"/>
+        <Class IRI="#Germes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Staphylococcus_epidermidis"/>
+        <Class IRI="#Staphylocoques_dore_guideline"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Staphylocoques_dore_guideline"/>
+        <Class IRI="#Germes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Streptococcus_pneumiae"/>
+        <Class IRI="#Germes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Streptocoques_Guideline"/>
+        <Class IRI="#Germes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vibrio_Cholerae"/>
+        <Class IRI="#Germes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#syphilis"/>
+        <Class IRI="#Germes"/>
+    </SubClassOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#Cause"/>
+        <ObjectProperty IRI="#Est_cause_par"/>
+    </InverseObjectProperties>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#Cause"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#Est_cause_par"/>
+    </InverseFunctionalObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Cause"/>
+        <Class IRI="#Germes"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Est_cause_par"/>
+        <Class IRI="#Diagnostic"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Cause"/>
+        <Class IRI="#Diagnostic"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Est_cause_par"/>
+        <Class IRI="#Germes"/>
+    </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ABCES_PULMONAIRE_EXTRA_HOSPITALIER</IRI>
+        <Literal>ABCÈS PULMONAIRE EXTRA-HOSPITALIER</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Cap1</IRI>
+        <Literal>CAP 1 = PNEUMONIE, PATIENT AMBULANT SANS FACTEURS DE COMORBIDITÉ</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Cap2</IRI>
+        <Literal>CAP 2 = PNEUMONIE, PATIENT AMBULANT AVEC FACTEURS DE COMORBIDITÉ MAIS SÉVÉRITÉ NE REQUIERT PAS HOSPITALISATION</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Cap3</IRI>
+        <Literal>CAP 3 = PNEUMONIE, HOSPITALISATION REQUISE PAR DEGRÉ DE SÉVÉRITÉ</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Cap4</IRI>
+        <Literal>CAP 4 = PNEUMONIE, HOSPITALISATION REQUISE EN SOINS INTENSIFS</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#EMPYEME_PLEURAL_EXTRA_HOSPITALIER</IRI>
+        <Literal>EMPYÈME PLEURAL EXTRA-HOSPITALIER</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#EXACERBATION_DE_BRONCHITE_CHRONIQUE_CHEZ_BRONCHITEUX_SEVERE</IRI>
+        <Literal>EXACERBATION DE BRONCHITE CHRONIQUE CHEZ BRONCHITEUX SEVERE AVEC DYSPNEE ET AUGMENTATION DE VISCOSITE, PURULENCE ET VOLUME DES EXPECTORATIONS</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Infections_des_voies_respiratoires_basses_intra_hospitalieres</IRI>
+        <Literal>Infections des voies respiratoires basses intra-hospitalières (HAP et VAP)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PNEUMONIE_ACQUISE_DANS_LA_COMMUNAUTE_CAP</IRI>
+        <Literal>PNEUMONIE ACQUISE DANS LA COMMUNAUTE (CAP)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PNEUMONIE_DE_FAUSSE_DEGLUTITION_EXTRA_HOSPITALIERE</IRI>
+        <Literal>PNEUMONIE DE « FAUSSE DÉGLUTITION » EXTRA-HOSPITALIÈRE</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PNEUMONIE_INTRA_HOSPITALIERE_HAP_AVEC_ANTIBIOTHERAPIE_PREALABLE_OU_AU_RESPIRATEUR_VAP</IRI>
+        <Literal>PNEUMONIE INTRA-HOSPITALIERE (HAP) AVEC ANTIBIOTHERAPIE PREALABLE OU AU
+RESPIRATEUR (VAP)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PNEUMONIE_INTRA_HOSPITALIERE_HAP_SANS_ANTIBIOTHERAPIE_PREALABLE</IRI>
+        <Literal>PNEUMONIE INTRA-HOSPITALIERE (HAP) (HOSPI &gt;5 JOURS, OU HOSPITALISATION DANS LES DEUX MOIS PRECEDANT) SANS ANTIBIOTHERAPIE PREALABLE</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

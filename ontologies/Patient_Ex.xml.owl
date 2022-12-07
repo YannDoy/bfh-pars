@@ -1,0 +1,1167 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/souhir/ontologies/Patient#"
+     xml:base="http://www.semanticweb.org/souhir/ontologies/Patient"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:Patient="http://www.semanticweb.org/souhir/ontologies/Patient#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/souhir/ontologies/Patient"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/souhir/ontologies/Patient#AgePatient -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/souhir/ontologies/Patient#AgePatient"/>
+    
+
+
+    <!-- http://www.semanticweb.org/souhir/ontologies/Patient#Allergique_de_niveaux -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/souhir/ontologies/Patient#Allergique_de_niveaux">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#Niveaux_allergie"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#Est_niveau_de"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/souhir/ontologies/Patient#Est_niveau_de -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/souhir/ontologies/Patient#Est_niveau_de">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#Niveaux_allergie"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/souhir/ontologies/Patient#HasAge -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/souhir/ontologies/Patient#HasAge">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#AgePatient"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#IsAgeOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/souhir/ontologies/Patient#HasAgeCategory -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/souhir/ontologies/Patient#HasAgeCategory">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#Patient"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#AgeCategory"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/souhir/ontologies/Patient#HasBirthDate -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/souhir/ontologies/Patient#HasBirthDate"/>
+    
+
+
+    <!-- http://www.semanticweb.org/souhir/ontologies/Patient#HasFamilyName -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/souhir/ontologies/Patient#HasFamilyName"/>
+    
+
+
+    <!-- http://www.semanticweb.org/souhir/ontologies/Patient#HasGender -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/souhir/ontologies/Patient#HasGender"/>
+    
+
+
+    <!-- http://www.semanticweb.org/souhir/ontologies/Patient#HasHeight -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/souhir/ontologies/Patient#HasHeight"/>
+    
+
+
+    <!-- http://www.semanticweb.org/souhir/ontologies/Patient#HasName -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/souhir/ontologies/Patient#HasName"/>
+    
+
+
+    <!-- http://www.semanticweb.org/souhir/ontologies/Patient#HasWeight -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/souhir/ontologies/Patient#HasWeight"/>
+    
+
+
+    <!-- http://www.semanticweb.org/souhir/ontologies/Patient#IsAgeOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/souhir/ontologies/Patient#IsAgeOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#AgePatient"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/souhir/ontologies/Patient#Niveaux_allergie -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/souhir/ontologies/Patient#Niveaux_allergie"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/souhir/ontologies/Patient#Hasage -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/souhir/ontologies/Patient#Hasage">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#Age"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/souhir/ontologies/Patient#Hascreatininelevel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/souhir/ontologies/Patient#Hascreatininelevel">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#Creatinine"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/souhir/ontologies/Patient#Test_allergie -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/souhir/ontologies/Patient#Test_allergie">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#Allergies"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/souhir/ontologies/Patient#Test_comorbidite -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/souhir/ontologies/Patient#Test_comorbidite">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#Comorbidities"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/souhir/ontologies/Patient#Test_etat -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/souhir/ontologies/Patient#Test_etat">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#State"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/souhir/ontologies/Patient#allergique_famille -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/souhir/ontologies/Patient#allergique_famille">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#Allergies"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/souhir/ontologies/Patient#niveaux_allergie -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/souhir/ontologies/Patient#niveaux_allergie">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#Levels"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/souhir/ontologies/Patient#nom -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/souhir/ontologies/Patient#nom">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#FamilyName"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/souhir/ontologies/Patient#poids -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/souhir/ontologies/Patient#poids"/>
+    
+
+
+    <!-- http://www.semanticweb.org/souhir/ontologies/Patient#prenom -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/souhir/ontologies/Patient#prenom">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#Name"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/souhir/ontologies/Patient#sexe -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/souhir/ontologies/Patient#sexe"/>
+    
+
+
+    <!-- http://www.semanticweb.org/souhir/ontologies/Patient#taille -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/souhir/ontologies/Patient#taille"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/souhir/ontologies/Patient#AdultUp30 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/souhir/ontologies/Patient#AdultUp30">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#AgeCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/souhir/ontologies/Patient#AdultUp65 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/souhir/ontologies/Patient#AdultUp65">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#AgeCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/souhir/ontologies/Patient#Age -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/souhir/ontologies/Patient#Age">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#Identification"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#IsAgeOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#Patient"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/souhir/ontologies/Patient#AgeCategory -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/souhir/ontologies/Patient#AgeCategory">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#Comorbidities"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/souhir/ontologies/Patient#Allergies -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/souhir/ontologies/Patient#Allergies">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#ClinicalCriteria"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#Allergique_de_niveaux"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#Levels"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/souhir/ontologies/Patient#Ambulatory -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/souhir/ontologies/Patient#Ambulatory">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#State"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#CurrentHospitalisation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/souhir/ontologies/Patient#Bet50_10 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/souhir/ontologies/Patient#Bet50_10">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#Creatinine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/souhir/ontologies/Patient#Bet80_50 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/souhir/ontologies/Patient#Bet80_50">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#Creatinine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/souhir/ontologies/Patient#BirthDate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/souhir/ontologies/Patient#BirthDate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#Identification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/souhir/ontologies/Patient#BrestFeeding -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/souhir/ontologies/Patient#BrestFeeding">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#Comorbidities"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#ChildUn12"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#Infant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/souhir/ontologies/Patient#ChildUn12 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/souhir/ontologies/Patient#ChildUn12">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#AgeCategory"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#Pregnancy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/souhir/ontologies/Patient#ChronicDiseases -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/souhir/ontologies/Patient#ChronicDiseases">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#Comorbidities"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/souhir/ontologies/Patient#ClinicalCriteria -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/souhir/ontologies/Patient#ClinicalCriteria"/>
+    
+
+
+    <!-- http://www.semanticweb.org/souhir/ontologies/Patient#Comorbidities -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/souhir/ontologies/Patient#Comorbidities">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#ClinicalCriteria"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/souhir/ontologies/Patient#Creatinine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/souhir/ontologies/Patient#Creatinine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#LaboratoryTests"/>
+        <rdfs:comment>&gt;80 
+80-50 
+50-10
+ &lt;10«anurie »</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/souhir/ontologies/Patient#CurrentHospitalisation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/souhir/ontologies/Patient#CurrentHospitalisation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#State"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/souhir/ontologies/Patient#CurrentTherapies -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/souhir/ontologies/Patient#CurrentTherapies">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#OtherCriteria"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/souhir/ontologies/Patient#Diabetes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/souhir/ontologies/Patient#Diabetes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#ChronicDiseases"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#NoDiseases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/souhir/ontologies/Patient#FamilyName -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/souhir/ontologies/Patient#FamilyName">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#Identification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/souhir/ontologies/Patient#Female -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/souhir/ontologies/Patient#Female">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#Gender"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#Male"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/souhir/ontologies/Patient#Gender -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/souhir/ontologies/Patient#Gender">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#Identification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/souhir/ontologies/Patient#Height -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/souhir/ontologies/Patient#Height">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#Identification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/souhir/ontologies/Patient#HepaticInsufficiency -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/souhir/ontologies/Patient#HepaticInsufficiency">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#ChronicDiseases"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#NoDiseases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/souhir/ontologies/Patient#Id_patient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/souhir/ontologies/Patient#Id_patient">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#Patient"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#Identification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/souhir/ontologies/Patient#Identification -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/souhir/ontologies/Patient#Identification"/>
+    
+
+
+    <!-- http://www.semanticweb.org/souhir/ontologies/Patient#Immunodepression -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/souhir/ontologies/Patient#Immunodepression">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#ImmunodepressionInformations"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#NoImmunodepression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/souhir/ontologies/Patient#ImmunodepressionInformations -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/souhir/ontologies/Patient#ImmunodepressionInformations">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#Comorbidities"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/souhir/ontologies/Patient#Infant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/souhir/ontologies/Patient#Infant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#AgeCategory"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#Pregnancy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/souhir/ontologies/Patient#LaboratoryTests -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/souhir/ontologies/Patient#LaboratoryTests">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#ClinicalCriteria"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/souhir/ontologies/Patient#Levels -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/souhir/ontologies/Patient#Levels">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#ClinicalCriteria"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/souhir/ontologies/Patient#Male -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/souhir/ontologies/Patient#Male">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#Gender"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/souhir/ontologies/Patient#Name -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/souhir/ontologies/Patient#Name">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#Identification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/souhir/ontologies/Patient#NoDiseases -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/souhir/ontologies/Patient#NoDiseases">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#ChronicDiseases"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#RenalInsufficiency"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/souhir/ontologies/Patient#NoImmunodepression -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/souhir/ontologies/Patient#NoImmunodepression">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#ImmunodepressionInformations"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#VIH"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/souhir/ontologies/Patient#OtherCriteria -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/souhir/ontologies/Patient#OtherCriteria"/>
+    
+
+
+    <!-- http://www.semanticweb.org/souhir/ontologies/Patient#Patient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/souhir/ontologies/Patient#Patient"/>
+    
+
+
+    <!-- http://www.semanticweb.org/souhir/ontologies/Patient#Pregnancy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/souhir/ontologies/Patient#Pregnancy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#Comorbidities"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/souhir/ontologies/Patient#RecentHospitalization -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/souhir/ontologies/Patient#RecentHospitalization">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#State"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/souhir/ontologies/Patient#RenalInsufficiency -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/souhir/ontologies/Patient#RenalInsufficiency">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#ChronicDiseases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/souhir/ontologies/Patient#Sensitive_1 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/souhir/ontologies/Patient#Sensitive_1">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#Levels"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#Sensitive_2"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/souhir/ontologies/Patient#Sensitive_2 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/souhir/ontologies/Patient#Sensitive_2">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#Levels"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/souhir/ontologies/Patient#State -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/souhir/ontologies/Patient#State">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#OtherCriteria"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/souhir/ontologies/Patient#Un10 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/souhir/ontologies/Patient#Un10">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#Creatinine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/souhir/ontologies/Patient#Up12 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/souhir/ontologies/Patient#Up12">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#AgeCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/souhir/ontologies/Patient#Up80 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/souhir/ontologies/Patient#Up80">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#Creatinine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/souhir/ontologies/Patient#VIH -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/souhir/ontologies/Patient#VIH">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#ImmunodepressionInformations"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/souhir/ontologies/Patient#Visite -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/souhir/ontologies/Patient#Visite">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#OtherCriteria"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/souhir/ontologies/Patient#Weight -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/souhir/ontologies/Patient#Weight">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#Identification"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/souhir/ontologies/Patient#OldLady -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/souhir/ontologies/Patient#OldLady">
+        <rdf:type rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#Patient"/>
+        <Hasage rdf:datatype="http://www.w3.org/2001/XMLSchema#int">66</Hasage>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/souhir/ontologies/Patient#P0001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/souhir/ontologies/Patient#P0001">
+        <rdf:type rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#Patient"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#Pregnancy"/>
+        <Hasage rdf:datatype="http://www.w3.org/2001/XMLSchema#int">35</Hasage>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/souhir/ontologies/Patient#YoungLady -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/souhir/ontologies/Patient#YoungLady">
+        <rdf:type rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#Patient"/>
+        <Hasage rdf:datatype="http://www.w3.org/2001/XMLSchema#int">40</Hasage>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/souhir/ontologies/Patient#AdultUp30"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/souhir/ontologies/Patient#AdultUp65"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/souhir/ontologies/Patient#ChildUn12"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/souhir/ontologies/Patient#Infant"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/souhir/ontologies/Patient#Up12"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/souhir/ontologies/Patient#Bet50_10"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/souhir/ontologies/Patient#Bet80_50"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/souhir/ontologies/Patient#Un10"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/souhir/ontologies/Patient#Up80"/>
+        </owl:members>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/souhir/ontologies/Patient#p">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/souhir/ontologies/Patient#a">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">R2</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#Hasage"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#p"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#a"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThanOrEqual"/>
+                                <swrl:arguments>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#a"/>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#int">12</rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </swrl:arguments>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#a"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#Patient"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#p"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#ChildUn12"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">R3</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#Hasage"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#p"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#a"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThanOrEqual"/>
+                                <swrl:arguments>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#a"/>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#int">30</rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </swrl:arguments>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#a"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#int">12</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#Patient"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#p"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#Up12"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">R4</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#Hasage"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#p"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#a"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThanOrEqual"/>
+                                <swrl:arguments>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#a"/>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#int">65</rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </swrl:arguments>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#Patient"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#p"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                                <swrl:arguments>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#a"/>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#int">30</rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </swrl:arguments>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#AdultUp30"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">R5</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#Hasage"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#p"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#a"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                <swrl:arguments>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#a"/>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#int">65</rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </swrl:arguments>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#Patient"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#p"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#AdultUp65"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">R1</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#Hasage"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#p"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#a"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThanOrEqual"/>
+                                <swrl:arguments>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#a"/>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </swrl:arguments>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#Patient"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#p"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#Infant"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/souhir/ontologies/Patient#p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

@@ -1,0 +1,3614 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://web.missouri.edu/~nhn8c/ontologies/Antibiotics_.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://web.missouri.edu/~nhn8c/ontologies/Antibiotics_.owl">
+    <Prefix name="" IRI="http://web.missouri.edu/~nhn8c/ontologies/Antibiotics_.owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="Inipenem" IRI="http://web.missouri.edu/~nhn8c/ontologies/Antibiotics.owl#Inipenem/"/>
+    <Prefix name="Antibiotics" IRI="http://web.missouri.edu/~nhn8c/ontologies/Antibiotics.owl#"/>
+    <Prefix name="Antibiotics2" IRI="http://web.missouri.edu/~nhn8c/ontologies/Antibiotics.owl#2"/>
+    <Prefix name="Antibiotics3" IRI="http://web.missouri.edu/~nhn8c/ontologies/Antibiotics.owl#4"/>
+    <Prefix name="Antibiotics4" IRI="http://web.missouri.edu/~nhn8c/ontologies/Antibiotics.owl#3"/>
+    <Prefix name="Antibiotics5" IRI="http://web.missouri.edu/~nhn8c/ontologies/Antibiotics.owl#1"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">
+This is an ontology of antimicrobial agents based on EpiCura Knowledge</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#1stgeneration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#2ndgeneration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#3rdgeneration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#4thgeneration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Administration_initial"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Adverse_effects"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Aggravated_neuromuscular_conduction_disorders"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Allergic_Reaction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Amikacin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Aminoglycosides"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Amoxicillin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Amoxicillin_Calvulanic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ampicillin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Anaerobes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Anaphylactic_shock"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Antimicrobial_Agents"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Antimicrobial_spectrum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Azithromycin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Aztreonam"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#B-lactam_antibiotics"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#B-lactamase_inhibitors"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BLSE"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Benign_Intracranial_Hypertension"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bodily_secretions_staining"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Campylobactar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Carbapenems"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Caries"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cefadroxil"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cefazolin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cefepime"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ceftazidime"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ceftriaxone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cefuroxim"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cefuroxim_axetil"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Central_effects"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cephalosporins"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Chlamydia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cholestatic_jaundice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ciprofloxacin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Clarithromycin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Clavulanic_acid"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Clindamycin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Clostridium_difficile"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cotrimoxazole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cutaneous_eruptions"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Diarrhea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dizziness"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Doxycycyclin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Enterobacteria"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Enterococci"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Enterrococcus_faecalis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Enterrococcus_faecium"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Eruption"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Flucloxacillin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fosfomycin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fulminant_hepatitis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fungal_infections"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Furans"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gastro_Intestinal_Troubles"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gentamicin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Glycopeptides"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Grave_1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Grave_2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Group_A"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Group_B"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Group_C"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Group_D"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Haemophilus_influenza"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Headache"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Heart_failure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hematologic_Troubles"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hepatic_Troubles"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Inhibitors_ofSythesis_and_reduction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Inhibitors_of_cell_wall_synthesis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Inhibitors_of_metabolism"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Inhibitors_of_nucleic_acid_function_or_synthesis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Inhibitors_of_protein_synthesis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Insomnia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Legionella_SP"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lincosamides"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Linezolid"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Listeria_monocytogenes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lyell_syndrome"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MRSA"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Macrolides"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mechanism_of_action"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mero/Inipenem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Metallic_taste"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Metronidazole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Minocycline"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Monobactams"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Moraxella"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Moxifloxacin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Myasthenia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mycoplasma"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Nausea_and_vomiting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Neisseria_gnorrhoeae"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Nephrotoxicity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Nervous_System_Troubles"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Neuropathy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Neutropenia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Nitrofurantoin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Nocardia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Norfloxacin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Oesophageal_ulcers"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ofloxacin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Others"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ototoxicity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Oxacillin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Paresis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Penicillin_G"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Penicillins"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Photosensitization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Piperacillin_Tazoboctam"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pneumocystis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pregnancy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Prolongation_of_QT_interval"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pseudomembranous_colitis_by_Clostridium_difficile_proliferation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pseudomonas_aeruginosa"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pulmonary_Fibrosis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Quinolones"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rash"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Renal_Troubles"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rifampicin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SNC_Troubles"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Serum_sickness"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Slowing_Bone_Growth"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Spirochete"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Staphylococcus_aureus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Staphylococcus_epidermidis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Steven_Johnson_Syndrome"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Streptococcus_pneumiae"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Syphilis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tazobactam"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Teeth_staining"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tendonitis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tetracyclines"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tigecycline"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tobramycin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vancomycin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vibrio_Cholerae"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Weightiness"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#lactic_acidosis"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#A_administration"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#A_indicateur"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Action_Mechanism"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Adverse_Effect"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Antimicrobial_spect"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Est_administration_de"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Gravite_indication"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Hasadverse_Effect"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Hasmechanism_of_action"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Initiale_admin"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#IsAdverse_Effect_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Is_affected_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Is_effective_against"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Ismechanism_of_action_of"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Availability"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Condition_administration"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Dose"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Duree"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Frequence"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Gravite"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Voie"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#essai"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#1stgeneration"/>
+        <Class IRI="#Cephalosporins"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#2ndgeneration"/>
+        <Class IRI="#Cephalosporins"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#3rdgeneration"/>
+        <Class IRI="#Cephalosporins"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#4thgeneration"/>
+        <Class IRI="#Cephalosporins"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#4thgeneration"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#Hasadverse_Effect"/>
+                <Class IRI="#SNC_Troubles"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#A_indicateur"/>
+                <Class IRI="#Grave_1"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Adverse_effects"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#A_indicateur"/>
+            <Class IRI="#Weightiness"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Aggravated_neuromuscular_conduction_disorders"/>
+        <Class IRI="#Adverse_effects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Allergic_Reaction"/>
+        <Class IRI="#Adverse_effects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Amikacin"/>
+        <Class IRI="#Aminoglycosides"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Amikacin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Enterobacteria"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Amikacin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Haemophilus_influenza"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Amikacin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Moraxella"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Amikacin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Nocardia"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Amikacin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Pseudomonas_aeruginosa"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Amikacin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Staphylococcus_aureus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Amikacin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Vibrio_Cholerae"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Aminoglycosides"/>
+        <Class IRI="#Group_D"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Aminoglycosides"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Hasadverse_Effect"/>
+            <Class IRI="#Aggravated_neuromuscular_conduction_disorders"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Aminoglycosides"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Hasadverse_Effect"/>
+            <Class IRI="#Nephrotoxicity"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Aminoglycosides"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Hasadverse_Effect"/>
+            <Class IRI="#Ototoxicity"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="&rdf;PlainLiteral">Administration: boulus intraveineux</Literal>
+        </Annotation>
+        <Class IRI="#Aminoglycosides"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Hasadverse_Effect"/>
+            <Class IRI="#Paresis"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Amoxicillin"/>
+        <Class IRI="#Penicillins"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Amoxicillin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Anaerobes"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Amoxicillin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Enterrococcus_faecalis"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Amoxicillin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Spirochete"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Amoxicillin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Streptococcus_pneumiae"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Amoxicillin_Calvulanic"/>
+        <Class IRI="#Group_A"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Amoxicillin_Calvulanic"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#Hasadverse_Effect"/>
+                <Class IRI="#Allergic_Reaction"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#A_indicateur"/>
+                <Class IRI="#Grave_2"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Amoxicillin_Calvulanic"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#Hasadverse_Effect"/>
+                <Class IRI="#Anaphylactic_shock"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#A_indicateur"/>
+                <Class IRI="#Grave_2"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Amoxicillin_Calvulanic"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#Hasadverse_Effect"/>
+                <Class IRI="#Fungal_infections"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#A_indicateur"/>
+                <Class IRI="#Grave_1"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Amoxicillin_Calvulanic"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#Hasadverse_Effect"/>
+                <Class IRI="#Gastro_Intestinal_Troubles"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#A_indicateur"/>
+                <Class IRI="#Grave_1"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Amoxicillin_Calvulanic"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Anaerobes"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Amoxicillin_Calvulanic"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Enterobacteria"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Amoxicillin_Calvulanic"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Enterrococcus_faecalis"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Amoxicillin_Calvulanic"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Haemophilus_influenza"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Amoxicillin_Calvulanic"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Moraxella"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Amoxicillin_Calvulanic"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Spirochete"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Amoxicillin_Calvulanic"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Staphylococcus_aureus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Amoxicillin_Calvulanic"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Streptococcus_pneumiae"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ampicillin"/>
+        <Class IRI="#Penicillins"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ampicillin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Anaerobes"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ampicillin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Enterrococcus_faecalis"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ampicillin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Listeria_monocytogenes"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ampicillin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Spirochete"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ampicillin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Streptococcus_pneumiae"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Anaerobes"/>
+        <Class IRI="#Antimicrobial_spectrum"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Anaphylactic_shock"/>
+        <Class IRI="#Adverse_effects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Antimicrobial_Agents"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Antimicrobial_Agents"/>
+        <ObjectUnionOf>
+            <Class IRI="#Group_A"/>
+            <Class IRI="#Group_B"/>
+            <Class IRI="#Group_C"/>
+            <Class IRI="#Group_D"/>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Antimicrobial_spectrum"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Azithromycin"/>
+        <Class IRI="#Macrolides"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Azithromycin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Anaerobes"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Azithromycin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Campylobactar"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Azithromycin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Chlamydia"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Azithromycin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Legionella_SP"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Azithromycin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Mycoplasma"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Azithromycin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Spirochete"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Azithromycin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Staphylococcus_aureus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Aztreonam"/>
+        <Class IRI="#Monobactams"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Aztreonam"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Campylobactar"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Aztreonam"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Enterobacteria"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Aztreonam"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Haemophilus_influenza"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Aztreonam"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Moraxella"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Aztreonam"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Neisseria_gnorrhoeae"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Aztreonam"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Pseudomonas_aeruginosa"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#B-lactam_antibiotics"/>
+        <Class IRI="#Group_A"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#B-lactamase_inhibitors"/>
+        <Class IRI="#Group_A"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BLSE"/>
+        <Class IRI="#Antimicrobial_spectrum"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Benign_Intracranial_Hypertension"/>
+        <Class IRI="#Adverse_effects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bodily_secretions_staining"/>
+        <Class IRI="#Adverse_effects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Campylobactar"/>
+        <Class IRI="#Antimicrobial_spectrum"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Carbapenems"/>
+        <Class IRI="#B-lactam_antibiotics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Carbapenems"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#Hasadverse_Effect"/>
+                <Class IRI="#SNC_Troubles"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#A_indicateur"/>
+                <Class IRI="#Grave_1"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Caries"/>
+        <Class IRI="#Adverse_effects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cefadroxil"/>
+        <Class IRI="#1stgeneration"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cefadroxil"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Enterococci"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cefadroxil"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Staphylococcus_aureus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cefadroxil"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Vibrio_Cholerae"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cefazolin"/>
+        <Class IRI="#1stgeneration"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cefazolin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Enterococci"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cefazolin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Staphylococcus_aureus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cefazolin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Vibrio_Cholerae"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cefepime"/>
+        <Class IRI="#4thgeneration"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cefepime"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Hasadverse_Effect"/>
+            <Class IRI="#SNC_Troubles"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cefepime"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Campylobactar"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cefepime"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Enterobacteria"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cefepime"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Enterococci"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cefepime"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Haemophilus_influenza"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cefepime"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Moraxella"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cefepime"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Neisseria_gnorrhoeae"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cefepime"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Pseudomonas_aeruginosa"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cefepime"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Staphylococcus_aureus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cefepime"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Vibrio_Cholerae"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ceftazidime"/>
+        <Class IRI="#3rdgeneration"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ceftazidime"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Campylobactar"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ceftazidime"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Enterobacteria"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ceftazidime"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Enterococci"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ceftazidime"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Haemophilus_influenza"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ceftazidime"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Moraxella"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ceftazidime"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Neisseria_gnorrhoeae"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ceftazidime"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Pseudomonas_aeruginosa"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ceftazidime"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Staphylococcus_aureus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ceftazidime"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Vibrio_Cholerae"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ceftriaxone"/>
+        <Class IRI="#3rdgeneration"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ceftriaxone"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Campylobactar"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ceftriaxone"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Enterobacteria"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ceftriaxone"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Enterococci"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ceftriaxone"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Haemophilus_influenza"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ceftriaxone"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Moraxella"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ceftriaxone"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Neisseria_gnorrhoeae"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ceftriaxone"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Spirochete"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ceftriaxone"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Staphylococcus_aureus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ceftriaxone"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Streptococcus_pneumiae"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ceftriaxone"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Vibrio_Cholerae"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cefuroxim"/>
+        <Class IRI="#2ndgeneration"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cefuroxim"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Enterobacteria"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cefuroxim"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Enterococci"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cefuroxim"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Haemophilus_influenza"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cefuroxim"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Moraxella"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cefuroxim"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Staphylococcus_aureus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cefuroxim"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Vibrio_Cholerae"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cefuroxim_axetil"/>
+        <Class IRI="#2ndgeneration"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cefuroxim_axetil"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Enterobacteria"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cefuroxim_axetil"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Enterococci"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cefuroxim_axetil"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Haemophilus_influenza"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cefuroxim_axetil"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Moraxella"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cefuroxim_axetil"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Staphylococcus_aureus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cefuroxim_axetil"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Vibrio_Cholerae"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Central_effects"/>
+        <Class IRI="#Adverse_effects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cephalosporins"/>
+        <Class IRI="#B-lactam_antibiotics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cephalosporins"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#Hasadverse_Effect"/>
+                <Class IRI="#Allergic_Reaction"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#A_indicateur"/>
+                <Class IRI="#Grave_1"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cephalosporins"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#Hasadverse_Effect"/>
+                <Class IRI="#Hematologic_Troubles"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#A_indicateur"/>
+                <Class IRI="#Grave_1"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cephalosporins"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#Hasadverse_Effect"/>
+                <Class IRI="#Hepatic_Troubles"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#A_indicateur"/>
+                <Class IRI="#Grave_1"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cephalosporins"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#Hasadverse_Effect"/>
+                <Class IRI="#Nephrotoxicity"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#A_indicateur"/>
+                <Class IRI="#Grave_1"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chlamydia"/>
+        <Class IRI="#Antimicrobial_spectrum"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cholestatic_jaundice"/>
+        <Class IRI="#Adverse_effects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ciprofloxacin"/>
+        <Class IRI="#Quinolones"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ciprofloxacin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Campylobactar"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ciprofloxacin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Chlamydia"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ciprofloxacin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Enterobacteria"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ciprofloxacin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Haemophilus_influenza"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ciprofloxacin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Moraxella"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ciprofloxacin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Mycoplasma"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ciprofloxacin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Nocardia"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ciprofloxacin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Pseudomonas_aeruginosa"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ciprofloxacin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Staphylococcus_aureus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ciprofloxacin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Vibrio_Cholerae"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Clarithromycin"/>
+        <Class IRI="#Macrolides"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Clarithromycin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Anaerobes"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Clarithromycin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Campylobactar"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Clarithromycin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Chlamydia"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Clarithromycin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Haemophilus_influenza"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Clarithromycin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Legionella_SP"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Clarithromycin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Mycoplasma"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Clarithromycin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Spirochete"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Clarithromycin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Staphylococcus_aureus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Clavulanic_acid"/>
+        <Class IRI="#B-lactamase_inhibitors"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Clindamycin"/>
+        <Class IRI="#Lincosamides"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Clindamycin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Hasadverse_Effect"/>
+            <Class IRI="#Gastro_Intestinal_Troubles"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Clindamycin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Hasadverse_Effect"/>
+            <Class IRI="#Pseudomembranous_colitis_by_Clostridium_difficile_proliferation"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Clindamycin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Anaerobes"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Clindamycin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Mycoplasma"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Clindamycin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Staphylococcus_aureus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Clindamycin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Streptococcus_pneumiae"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Clostridium_difficile"/>
+        <Class IRI="#Antimicrobial_spectrum"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cotrimoxazole"/>
+        <Class IRI="#Inhibitors_ofSythesis_and_reduction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cotrimoxazole"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#Hasadverse_Effect"/>
+                <Class IRI="#Lyell_syndrome"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#A_indicateur"/>
+                <Class IRI="#Grave_2"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cotrimoxazole"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#Hasadverse_Effect"/>
+                <Class IRI="#Steven_Johnson_Syndrome"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#A_indicateur"/>
+                <Class IRI="#Grave_2"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cotrimoxazole"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Hasadverse_Effect"/>
+            <Class IRI="#Allergic_Reaction"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cotrimoxazole"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Hasadverse_Effect"/>
+            <Class IRI="#Hematologic_Troubles"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cotrimoxazole"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Hasadverse_Effect"/>
+            <Class IRI="#Hepatic_Troubles"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cotrimoxazole"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Hasadverse_Effect"/>
+            <Class IRI="#Renal_Troubles"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cotrimoxazole"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Enterobacteria"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cotrimoxazole"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Haemophilus_influenza"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cotrimoxazole"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Listeria_monocytogenes"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cotrimoxazole"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Moraxella"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cotrimoxazole"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Nocardia"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cotrimoxazole"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Pneumocystis"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cotrimoxazole"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Staphylococcus_aureus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cutaneous_eruptions"/>
+        <Class IRI="#Adverse_effects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Diarrhea"/>
+        <Class IRI="#Adverse_effects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dizziness"/>
+        <Class IRI="#Adverse_effects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Doxycycyclin"/>
+        <Class IRI="#Tetracyclines"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Doxycycyclin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Hasadverse_Effect"/>
+            <Class IRI="#Oesophageal_ulcers"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Doxycycyclin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Chlamydia"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Doxycycyclin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Mycoplasma"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Doxycycyclin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Nocardia"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Doxycycyclin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Spirochete"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Doxycycyclin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Staphylococcus_aureus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Doxycycyclin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Vibrio_Cholerae"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Enterobacteria"/>
+        <Class IRI="#Antimicrobial_spectrum"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Enterococci"/>
+        <Class IRI="#Antimicrobial_spectrum"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Enterrococcus_faecalis"/>
+        <Class IRI="#Antimicrobial_spectrum"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Enterrococcus_faecium"/>
+        <Class IRI="#Antimicrobial_spectrum"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Eruption"/>
+        <Class IRI="#Adverse_effects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Flucloxacillin"/>
+        <Class IRI="#Penicillins"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Flucloxacillin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Staphylococcus_aureus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fosfomycin"/>
+        <Class IRI="#Others"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="&rdf;PlainLiteral">R�actions allergiques cutan�es</Literal>
+        </Annotation>
+        <Class IRI="#Fosfomycin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Hasadverse_Effect"/>
+            <Class IRI="#Allergic_Reaction"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fosfomycin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Hasadverse_Effect"/>
+            <Class IRI="#Diarrhea"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fosfomycin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Hasadverse_Effect"/>
+            <Class IRI="#Nausea_and_vomiting"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fosfomycin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Enterobacteria"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fulminant_hepatitis"/>
+        <Class IRI="#Adverse_effects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fungal_infections"/>
+        <Class IRI="#Adverse_effects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Furans"/>
+        <Class IRI="#Group_C"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="&rdf;PlainLiteral">administration : dur�e</Literal>
+        </Annotation>
+        <Class IRI="#Furans"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Hasadverse_Effect"/>
+            <Class IRI="#Pulmonary_Fibrosis"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gastro_Intestinal_Troubles"/>
+        <Class IRI="#Adverse_effects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gentamicin"/>
+        <Class IRI="#Aminoglycosides"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gentamicin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Enterobacteria"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gentamicin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Haemophilus_influenza"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gentamicin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Listeria_monocytogenes"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gentamicin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Moraxella"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gentamicin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Pseudomonas_aeruginosa"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gentamicin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Staphylococcus_aureus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gentamicin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Vibrio_Cholerae"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Glycopeptides"/>
+        <Class IRI="#Group_A"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Glycopeptides"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Hasadverse_Effect"/>
+            <Class IRI="#Allergic_Reaction"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Glycopeptides"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Hasadverse_Effect"/>
+            <Class IRI="#Nephrotoxicity"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Glycopeptides"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Hasadverse_Effect"/>
+            <Class IRI="#Ototoxicity"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Grave_1"/>
+        <Class IRI="#Weightiness"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Grave_2"/>
+        <Class IRI="#Weightiness"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Group_A"/>
+        <Class IRI="#Antimicrobial_Agents"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Group_A"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Hasmechanism_of_action"/>
+            <Class IRI="#Inhibitors_of_cell_wall_synthesis"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Group_B"/>
+        <Class IRI="#Antimicrobial_Agents"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Group_B"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Hasmechanism_of_action"/>
+            <Class IRI="#Inhibitors_of_metabolism"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Group_C"/>
+        <Class IRI="#Antimicrobial_Agents"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Group_C"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Hasmechanism_of_action"/>
+            <Class IRI="#Inhibitors_of_nucleic_acid_function_or_synthesis"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Group_D"/>
+        <Class IRI="#Antimicrobial_Agents"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Haemophilus_influenza"/>
+        <Class IRI="#Antimicrobial_spectrum"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Headache"/>
+        <Class IRI="#Adverse_effects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Heart_failure"/>
+        <Class IRI="#Adverse_effects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hematologic_Troubles"/>
+        <Class IRI="#Adverse_effects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hepatic_Troubles"/>
+        <Class IRI="#Adverse_effects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Inhibitors_ofSythesis_and_reduction"/>
+        <Class IRI="#Group_B"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Inhibitors_of_cell_wall_synthesis"/>
+        <Class IRI="#Mechanism_of_action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Inhibitors_of_cell_wall_synthesis"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Ismechanism_of_action_of"/>
+            <Class IRI="#Group_A"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Inhibitors_of_metabolism"/>
+        <Class IRI="#Mechanism_of_action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Inhibitors_of_metabolism"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Ismechanism_of_action_of"/>
+            <Class IRI="#Group_B"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Inhibitors_of_nucleic_acid_function_or_synthesis"/>
+        <Class IRI="#Mechanism_of_action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Inhibitors_of_nucleic_acid_function_or_synthesis"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Ismechanism_of_action_of"/>
+            <Class IRI="#Group_C"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Inhibitors_of_protein_synthesis"/>
+        <Class IRI="#Mechanism_of_action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Inhibitors_of_protein_synthesis"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Ismechanism_of_action_of"/>
+            <Class IRI="#Group_D"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Insomnia"/>
+        <Class IRI="#Adverse_effects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Legionella_SP"/>
+        <Class IRI="#Antimicrobial_spectrum"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lincosamides"/>
+        <Class IRI="#Group_D"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Linezolid"/>
+        <Class IRI="#Others"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="&rdf;PlainLiteral">administartion : dur�e &gt;4 semaines</Literal>
+        </Annotation>
+        <Class IRI="#Linezolid"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#Hasadverse_Effect"/>
+                <Class IRI="#Hematologic_Troubles"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#A_indicateur"/>
+                <Class IRI="#Grave_2"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="&rdf;PlainLiteral">administartion : dur�e &gt;4 semaines</Literal>
+        </Annotation>
+        <Class IRI="#Linezolid"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#Hasadverse_Effect"/>
+                <Class IRI="#Neuropathy"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#A_indicateur"/>
+                <Class IRI="#Grave_2"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="&rdf;PlainLiteral">administartion : dur�e &gt;4 semaines</Literal>
+        </Annotation>
+        <Class IRI="#Linezolid"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#Hasadverse_Effect"/>
+                <Class IRI="#lactic_acidosis"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#A_indicateur"/>
+                <Class IRI="#Grave_2"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Linezolid"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Hasadverse_Effect"/>
+            <Class IRI="#Dizziness"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Linezolid"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Hasadverse_Effect"/>
+            <Class IRI="#Gastro_Intestinal_Troubles"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Linezolid"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Hasadverse_Effect"/>
+            <Class IRI="#Headache"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Linezolid"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Hasadverse_Effect"/>
+            <Class IRI="#Insomnia"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Linezolid"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Hasadverse_Effect"/>
+            <Class IRI="#Pseudomembranous_colitis_by_Clostridium_difficile_proliferation"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Linezolid"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Hasadverse_Effect"/>
+            <Class IRI="#Rash"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Linezolid"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Enterrococcus_faecalis"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Linezolid"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Enterrococcus_faecium"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Linezolid"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#MRSA"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Linezolid"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Staphylococcus_aureus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Listeria_monocytogenes"/>
+        <Class IRI="#Antimicrobial_spectrum"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lyell_syndrome"/>
+        <Class IRI="#Adverse_effects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MRSA"/>
+        <Class IRI="#Antimicrobial_spectrum"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Macrolides"/>
+        <Class IRI="#Group_D"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Macrolides"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Hasadverse_Effect"/>
+            <Class IRI="#Allergic_Reaction"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="&rdf;PlainLiteral">r�versibles</Literal>
+        </Annotation>
+        <Class IRI="#Macrolides"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Hasadverse_Effect"/>
+            <Class IRI="#Hepatic_Troubles"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="&rdf;PlainLiteral">Administration : dose</Literal>
+        </Annotation>
+        <Class IRI="#Macrolides"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Hasadverse_Effect"/>
+            <Class IRI="#Ototoxicity"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="&rdf;PlainLiteral">Administration : Injection intraveineuse trop rapide</Literal>
+        </Annotation>
+        <Class IRI="#Macrolides"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Hasadverse_Effect"/>
+            <Class IRI="#Prolongation_of_QT_interval"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Macrolides"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Hasadverse_Effect"/>
+            <Class IRI="#SNC_Troubles"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mero/Inipenem"/>
+        <Class IRI="#Carbapenems"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mero/Inipenem"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Anaerobes"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mero/Inipenem"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#BLSE"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mero/Inipenem"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Campylobactar"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mero/Inipenem"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Enterobacteria"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mero/Inipenem"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Haemophilus_influenza"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mero/Inipenem"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Moraxella"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mero/Inipenem"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Neisseria_gnorrhoeae"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mero/Inipenem"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Nocardia"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mero/Inipenem"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Pseudomonas_aeruginosa"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mero/Inipenem"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Spirochete"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mero/Inipenem"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Staphylococcus_aureus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Metallic_taste"/>
+        <Class IRI="#Adverse_effects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Metronidazole"/>
+        <Class IRI="#Others"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Metronidazole"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Hasadverse_Effect"/>
+            <Class IRI="#Dizziness"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Metronidazole"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Hasadverse_Effect"/>
+            <Class IRI="#Headache"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Metronidazole"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Hasadverse_Effect"/>
+            <Class IRI="#Metallic_taste"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Metronidazole"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Hasadverse_Effect"/>
+            <Class IRI="#Nausea_and_vomiting"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="&rdf;PlainLiteral">Administration : dur�e
+</Literal>
+        </Annotation>
+        <Class IRI="#Metronidazole"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Hasadverse_Effect"/>
+            <Class IRI="#Neuropathy"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Metronidazole"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Anaerobes"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Metronidazole"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Clostridium_difficile"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Minocycline"/>
+        <Class IRI="#Tetracyclines"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Minocycline"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Chlamydia"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Minocycline"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Mycoplasma"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Minocycline"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Staphylococcus_aureus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Minocycline"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Vibrio_Cholerae"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Monobactams"/>
+        <Class IRI="#B-lactam_antibiotics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Monobactams"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#Hasadverse_Effect"/>
+                <Class IRI="#Hepatic_Troubles"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#A_indicateur"/>
+                <Class IRI="#Grave_1"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Moraxella"/>
+        <Class IRI="#Antimicrobial_spectrum"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Moxifloxacin"/>
+        <Class IRI="#Quinolones"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Moxifloxacin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Hasadverse_Effect"/>
+            <Class IRI="#Cutaneous_eruptions"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Moxifloxacin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Hasadverse_Effect"/>
+            <Class IRI="#Fulminant_hepatitis"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Moxifloxacin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Hasadverse_Effect"/>
+            <Class IRI="#Heart_failure"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Moxifloxacin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Hasadverse_Effect"/>
+            <Class IRI="#Prolongation_of_QT_interval"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Moxifloxacin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Campylobactar"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Moxifloxacin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Chlamydia"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Moxifloxacin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Enterobacteria"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Moxifloxacin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Haemophilus_influenza"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Moxifloxacin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Legionella_SP"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Moxifloxacin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Moraxella"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Moxifloxacin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Mycoplasma"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Moxifloxacin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Pseudomonas_aeruginosa"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Moxifloxacin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Staphylococcus_aureus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Moxifloxacin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Streptococcus_pneumiae"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Moxifloxacin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Vibrio_Cholerae"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Myasthenia"/>
+        <Class IRI="#Adverse_effects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mycoplasma"/>
+        <Class IRI="#Antimicrobial_spectrum"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Nausea_and_vomiting"/>
+        <Class IRI="#Adverse_effects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Neisseria_gnorrhoeae"/>
+        <Class IRI="#Antimicrobial_spectrum"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Nephrotoxicity"/>
+        <Class IRI="#Adverse_effects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Nervous_System_Troubles"/>
+        <Class IRI="#Adverse_effects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Neuropathy"/>
+        <Class IRI="#Adverse_effects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Neutropenia"/>
+        <Class IRI="#Adverse_effects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Nitrofurantoin"/>
+        <Class IRI="#Furans"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="&rdf;PlainLiteral">administration dur�e</Literal>
+        </Annotation>
+        <Class IRI="#Nitrofurantoin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Hasadverse_Effect"/>
+            <Class IRI="#Cholestatic_jaundice"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Nitrofurantoin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Hasadverse_Effect"/>
+            <Class IRI="#Nausea_and_vomiting"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="&rdf;PlainLiteral">administration : dur�e</Literal>
+        </Annotation>
+        <Class IRI="#Nitrofurantoin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Hasadverse_Effect"/>
+            <Class IRI="#Neuropathy"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Nitrofurantoin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Enterobacteria"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Nocardia"/>
+        <Class IRI="#Antimicrobial_spectrum"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Norfloxacin"/>
+        <Class IRI="#Quinolones"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Norfloxacin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Chlamydia"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Norfloxacin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Enterobacteria"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Norfloxacin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Haemophilus_influenza"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Norfloxacin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Moraxella"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Norfloxacin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Mycoplasma"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Norfloxacin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Vibrio_Cholerae"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Oesophageal_ulcers"/>
+        <Class IRI="#Adverse_effects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ofloxacin"/>
+        <Class IRI="#Quinolones"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ofloxacin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Chlamydia"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ofloxacin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Enterobacteria"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ofloxacin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Haemophilus_influenza"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ofloxacin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Moraxella"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ofloxacin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Mycoplasma"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ofloxacin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Vibrio_Cholerae"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Others"/>
+        <Class IRI="#Group_D"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ototoxicity"/>
+        <Class IRI="#Adverse_effects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Oxacillin"/>
+        <Class IRI="#Penicillins"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Oxacillin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Staphylococcus_aureus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Paresis"/>
+        <Class IRI="#Adverse_effects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Penicillin_G"/>
+        <Class IRI="#Penicillins"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Penicillin_G"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Anaerobes"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Penicillin_G"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Spirochete"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Penicillin_G"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Streptococcus_pneumiae"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Penicillin_G"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Syphilis"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Penicillins"/>
+        <Class IRI="#B-lactam_antibiotics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Penicillins"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#Hasadverse_Effect"/>
+                <Class IRI="#Allergic_Reaction"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#A_indicateur"/>
+                <Class IRI="#Grave_2"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Penicillins"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#Hasadverse_Effect"/>
+                <Class IRI="#Anaphylactic_shock"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#A_indicateur"/>
+                <Class IRI="#Grave_2"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Penicillins"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#Hasadverse_Effect"/>
+                <Class IRI="#Fungal_infections"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#A_indicateur"/>
+                <Class IRI="#Grave_1"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Penicillins"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#Hasadverse_Effect"/>
+                <Class IRI="#Gastro_Intestinal_Troubles"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#A_indicateur"/>
+                <Class IRI="#Grave_1"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Photosensitization"/>
+        <Class IRI="#Adverse_effects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Piperacillin_Tazoboctam"/>
+        <Class IRI="#Group_A"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Piperacillin_Tazoboctam"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Anaerobes"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Piperacillin_Tazoboctam"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Campylobactar"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Piperacillin_Tazoboctam"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Enterobacteria"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Piperacillin_Tazoboctam"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Haemophilus_influenza"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Piperacillin_Tazoboctam"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Moraxella"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Piperacillin_Tazoboctam"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Pseudomonas_aeruginosa"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Piperacillin_Tazoboctam"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Staphylococcus_aureus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Piperacillin_Tazoboctam"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Streptococcus_pneumiae"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pneumocystis"/>
+        <Class IRI="#Antimicrobial_spectrum"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pregnancy"/>
+        <Class IRI="#Adverse_effects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Prolongation_of_QT_interval"/>
+        <Class IRI="#Adverse_effects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pseudomembranous_colitis_by_Clostridium_difficile_proliferation"/>
+        <Class IRI="#Adverse_effects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pseudomonas_aeruginosa"/>
+        <Class IRI="#Antimicrobial_spectrum"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pulmonary_Fibrosis"/>
+        <Class IRI="#Adverse_effects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Quinolones"/>
+        <Class IRI="#Group_C"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Quinolones"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#Hasadverse_Effect"/>
+                <Class IRI="#Hematologic_Troubles"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#A_indicateur"/>
+                <Class IRI="#Grave_2"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Quinolones"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#Hasadverse_Effect"/>
+                <Class IRI="#Hepatic_Troubles"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#A_indicateur"/>
+                <Class IRI="#Grave_2"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Quinolones"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Hasadverse_Effect"/>
+            <Class IRI="#Allergic_Reaction"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="&rdf;PlainLiteral">Aggravation</Literal>
+        </Annotation>
+        <Class IRI="#Quinolones"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Hasadverse_Effect"/>
+            <Class IRI="#Myasthenia"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Quinolones"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Hasadverse_Effect"/>
+            <Class IRI="#Photosensitization"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Quinolones"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Hasadverse_Effect"/>
+            <Class IRI="#SNC_Troubles"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Quinolones"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Hasadverse_Effect"/>
+            <Class IRI="#Tendonitis"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rash"/>
+        <Class IRI="#Adverse_effects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Renal_Troubles"/>
+        <Class IRI="#Adverse_effects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rifampicin"/>
+        <Class IRI="#Others"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rifampicin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Hasadverse_Effect"/>
+            <Class IRI="#Bodily_secretions_staining"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="&rdf;PlainLiteral">Administration : dose</Literal>
+        </Annotation>
+        <Class IRI="#Rifampicin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Hasadverse_Effect"/>
+            <Class IRI="#Hepatic_Troubles"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rifampicin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Legionella_SP"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rifampicin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Staphylococcus_aureus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SNC_Troubles"/>
+        <Class IRI="#Adverse_effects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Serum_sickness"/>
+        <Class IRI="#Adverse_effects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Slowing_Bone_Growth"/>
+        <Class IRI="#Adverse_effects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Spirochete"/>
+        <Class IRI="#Antimicrobial_spectrum"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Staphylococcus_aureus"/>
+        <Class IRI="#Antimicrobial_spectrum"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Staphylococcus_epidermidis"/>
+        <Class IRI="#Antimicrobial_spectrum"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Steven_Johnson_Syndrome"/>
+        <Class IRI="#Adverse_effects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Streptococcus_pneumiae"/>
+        <Class IRI="#Antimicrobial_spectrum"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Syphilis"/>
+        <Class IRI="#Antimicrobial_spectrum"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tazobactam"/>
+        <Class IRI="#B-lactamase_inhibitors"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Teeth_staining"/>
+        <Class IRI="#Adverse_effects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tendonitis"/>
+        <Class IRI="#Adverse_effects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tetracyclines"/>
+        <Class IRI="#Group_D"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tetracyclines"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Hasadverse_Effect"/>
+            <Class IRI="#Benign_Intracranial_Hypertension"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tetracyclines"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Hasadverse_Effect"/>
+            <Class IRI="#Caries"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tetracyclines"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Hasadverse_Effect"/>
+            <Class IRI="#Eruption"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tetracyclines"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Hasadverse_Effect"/>
+            <Class IRI="#Gastro_Intestinal_Troubles"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="&rdf;PlainLiteral">insuffisance r�nale et femme enceinte
+</Literal>
+        </Annotation>
+        <Class IRI="#Tetracyclines"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Hasadverse_Effect"/>
+            <Class IRI="#Hepatic_Troubles"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="&rdf;PlainLiteral">R�versible</Literal>
+        </Annotation>
+        <Class IRI="#Tetracyclines"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Hasadverse_Effect"/>
+            <Class IRI="#Slowing_Bone_Growth"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tetracyclines"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Hasadverse_Effect"/>
+            <Class IRI="#Teeth_staining"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tigecycline"/>
+        <Class IRI="#Tetracyclines"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tigecycline"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Enterobacteria"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tigecycline"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Haemophilus_influenza"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tigecycline"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#MRSA"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tigecycline"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Moraxella"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tobramycin"/>
+        <Class IRI="#Aminoglycosides"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tobramycin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Enterobacteria"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tobramycin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Haemophilus_influenza"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tobramycin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Moraxella"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tobramycin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Pseudomonas_aeruginosa"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tobramycin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Staphylococcus_aureus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tobramycin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Vibrio_Cholerae"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vancomycin"/>
+        <Class IRI="#Glycopeptides"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vancomycin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Hasadverse_Effect"/>
+            <Class IRI="#Neutropenia"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vancomycin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Clostridium_difficile"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vancomycin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Enterrococcus_faecalis"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vancomycin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Enterrococcus_faecium"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vancomycin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#MRSA"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vancomycin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Staphylococcus_aureus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vancomycin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Staphylococcus_epidermidis"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vancomycin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Streptococcus_pneumiae"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vibrio_Cholerae"/>
+        <Class IRI="#Antimicrobial_spectrum"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#lactic_acidosis"/>
+        <Class IRI="#Adverse_effects"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#1stgeneration"/>
+        <Class IRI="#2ndgeneration"/>
+        <Class IRI="#3rdgeneration"/>
+        <Class IRI="#4thgeneration"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Administration_initial"/>
+        <Class IRI="#Adverse_effects"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Administration_initial"/>
+        <Class IRI="#Antimicrobial_spectrum"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Administration_initial"/>
+        <Class IRI="#Mechanism_of_action"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Administration_initial"/>
+        <Class IRI="#Weightiness"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Adverse_effects"/>
+        <Class IRI="#Antimicrobial_spectrum"/>
+        <Class IRI="#Mechanism_of_action"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Antimicrobial_spectrum"/>
+        <Class IRI="#Weightiness"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#B-lactam_antibiotics"/>
+        <Class IRI="#Glycopeptides"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Carbapenems"/>
+        <Class IRI="#Cephalosporins"/>
+        <Class IRI="#Monobactams"/>
+        <Class IRI="#Penicillins"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Chlamydia"/>
+        <Class IRI="#Enterobacteria"/>
+        <Class IRI="#Nocardia"/>
+        <Class IRI="#Pneumocystis"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Clostridium_difficile"/>
+        <Class IRI="#Enterococci"/>
+        <Class IRI="#Listeria_monocytogenes"/>
+        <Class IRI="#Staphylococcus_aureus"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Grave_1"/>
+        <Class IRI="#Grave_2"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Group_A"/>
+        <Class IRI="#Group_B"/>
+        <Class IRI="#Group_C"/>
+        <Class IRI="#Group_D"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Inhibitors_of_cell_wall_synthesis"/>
+        <Class IRI="#Inhibitors_of_metabolism"/>
+        <Class IRI="#Inhibitors_of_nucleic_acid_function_or_synthesis"/>
+        <Class IRI="#Inhibitors_of_protein_synthesis"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Mechanism_of_action"/>
+        <Class IRI="#Weightiness"/>
+    </DisjointClasses>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#A_administration"/>
+        <ObjectProperty IRI="#Initiale_admin"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#A_indicateur"/>
+        <ObjectProperty IRI="#Gravite_indication"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Est_administration_de"/>
+        <ObjectProperty IRI="#Initiale_admin"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Hasadverse_Effect"/>
+        <ObjectProperty IRI="#Adverse_Effect"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Hasmechanism_of_action"/>
+        <ObjectProperty IRI="#Action_Mechanism"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#IsAdverse_Effect_of"/>
+        <ObjectProperty IRI="#Adverse_Effect"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Is_affected_by"/>
+        <ObjectProperty IRI="#Antimicrobial_spect"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Is_effective_against"/>
+        <ObjectProperty IRI="#Antimicrobial_spect"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Ismechanism_of_action_of"/>
+        <ObjectProperty IRI="#Action_Mechanism"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#Est_administration_de"/>
+        <ObjectProperty IRI="#A_administration"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#Hasadverse_Effect"/>
+        <ObjectProperty IRI="#IsAdverse_Effect_of"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#Ismechanism_of_action_of"/>
+        <ObjectProperty IRI="#Hasmechanism_of_action"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#Is_effective_against"/>
+        <ObjectProperty IRI="#Is_affected_by"/>
+    </InverseObjectProperties>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#Hasadverse_Effect"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#Hasmechanism_of_action"/>
+    </TransitiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#A_administration"/>
+        <Class IRI="#Antimicrobial_Agents"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Est_administration_de"/>
+        <Class IRI="#Administration_initial"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Hasadverse_Effect"/>
+        <Class IRI="#Antimicrobial_Agents"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Hasmechanism_of_action"/>
+        <Class IRI="#Antimicrobial_Agents"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#IsAdverse_Effect_of"/>
+        <Class IRI="#Adverse_effects"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Is_affected_by"/>
+        <Class IRI="#Antimicrobial_spectrum"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Is_effective_against"/>
+        <Class IRI="#Antimicrobial_Agents"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Ismechanism_of_action_of"/>
+        <Class IRI="#Mechanism_of_action"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#A_administration"/>
+        <Class IRI="#Administration_initial"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Est_administration_de"/>
+        <Class IRI="#Antimicrobial_Agents"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Hasadverse_Effect"/>
+        <Class IRI="#Adverse_effects"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Hasmechanism_of_action"/>
+        <Class IRI="#Mechanism_of_action"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#IsAdverse_Effect_of"/>
+        <Class IRI="#Antimicrobial_Agents"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Is_affected_by"/>
+        <Class IRI="#Antimicrobial_Agents"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Is_effective_against"/>
+        <Class IRI="#Antimicrobial_spectrum"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Ismechanism_of_action_of"/>
+        <Class IRI="#Antimicrobial_Agents"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Availability"/>
+        <Class IRI="#Antimicrobial_Agents"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Condition_administration"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#IsAdverse_Effect_of"/>
+            <Class IRI="#Antimicrobial_Agents"/>
+        </ObjectSomeValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Dose"/>
+        <Class IRI="#Administration_initial"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Duree"/>
+        <Class IRI="#Administration_initial"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Frequence"/>
+        <Class IRI="#Administration_initial"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Gravite"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#IsAdverse_Effect_of"/>
+            <Class IRI="#Antimicrobial_Agents"/>
+        </ObjectSomeValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Voie"/>
+        <Class IRI="#Administration_initial"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#Availability"/>
+        <DataOneOf>
+            <Literal datatypeIRI="&xsd;string">non</Literal>
+            <Literal datatypeIRI="&xsd;string">oui</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Condition_administration"/>
+        <DataOneOf>
+            <Literal datatypeIRI="&xsd;string">dose</Literal>
+            <Literal datatypeIRI="&xsd;string">duree</Literal>
+            <Literal datatypeIRI="&xsd;string">frequence</Literal>
+            <Literal datatypeIRI="&xsd;string">general</Literal>
+            <Literal datatypeIRI="&xsd;string">voie</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Gravite"/>
+        <DataOneOf>
+            <Literal datatypeIRI="&xsd;string">1</Literal>
+            <Literal datatypeIRI="&xsd;string">2</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Ceftazidime</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ne couvre pas le pneumocoque</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Enterobacteria</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Exemple : Klebs pneumo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Tendonitis</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Arthralgies, rupture tendineuse</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#lactic_acidosis</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">lactic acidosis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>xsd:language</AbbreviatedIRI>
+        <Literal datatypeIRI="&xsd;language">Pills,Creme,IV,IM</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
