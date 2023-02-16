@@ -357,10 +357,6 @@
         <Class IRI="#Diagnostic"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Infections_des_tessus_mous"/>
-        <Class IRI="#Diagnostic"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#Infections_des_voies_respiratoires"/>
         <Class IRI="#Diagnostic"/>
     </SubClassOf>

@@ -1,22 +1,12 @@
 <?xml version="1.0"?>
-
-
-<!DOCTYPE Ontology [
-    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
-    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
-    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
-    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
-]>
-
-
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
      xml:base="http://web.missouri.edu/~nhn8c/ontologies/Antibiotics_.owl"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://web.missouri.edu/~nhn8c/ontologies/Antibiotics_.owl">
-    <Prefix name="" IRI="http://web.missouri.edu/~nhn8c/ontologies/Antibiotics_.owl#"/>
+    <Prefix name="" IRI="http://web.missouri.edu/~nhn8c/ontologies/Antibiotics_.owl"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
@@ -30,21 +20,9 @@
     <Prefix name="Antibiotics5" IRI="http://web.missouri.edu/~nhn8c/ontologies/Antibiotics.owl#1"/>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <Literal datatypeIRI="&rdf;PlainLiteral">
+        <Literal>
 This is an ontology of antimicrobial agents based on EpiCura Knowledge</Literal>
     </Annotation>
-    <Declaration>
-        <Class IRI="#1stgeneration"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#2ndgeneration"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#3rdgeneration"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#4thgeneration"/>
-    </Declaration>
     <Declaration>
         <Class IRI="#Administration_initial"/>
     </Declaration>
@@ -292,9 +270,6 @@ This is an ontology of antimicrobial agents based on EpiCura Knowledge</Literal>
         <Class IRI="#Mechanism_of_action"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Mero/Inipenem"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Metallic_taste"/>
     </Declaration>
     <Declaration>
@@ -463,6 +438,21 @@ This is an ontology of antimicrobial agents based on EpiCura Knowledge</Literal>
         <Class IRI="#lactic_acidosis"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#1stgeneration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#2ndgeneration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#3rdgeneration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#4thgeneration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mero/Inipenem"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#A_administration"/>
     </Declaration>
     <Declaration>
@@ -528,35 +518,6 @@ This is an ontology of antimicrobial agents based on EpiCura Knowledge</Literal>
     <Declaration>
         <NamedIndividual IRI="#essai"/>
     </Declaration>
-    <SubClassOf>
-        <Class IRI="#1stgeneration"/>
-        <Class IRI="#Cephalosporins"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#2ndgeneration"/>
-        <Class IRI="#Cephalosporins"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#3rdgeneration"/>
-        <Class IRI="#Cephalosporins"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#4thgeneration"/>
-        <Class IRI="#Cephalosporins"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#4thgeneration"/>
-        <ObjectIntersectionOf>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#Hasadverse_Effect"/>
-                <Class IRI="#SNC_Troubles"/>
-            </ObjectSomeValuesFrom>
-            <ObjectAllValuesFrom>
-                <ObjectProperty IRI="#A_indicateur"/>
-                <Class IRI="#Grave_1"/>
-            </ObjectAllValuesFrom>
-        </ObjectIntersectionOf>
-    </SubClassOf>
     <SubClassOf>
         <Class IRI="#Adverse_effects"/>
         <ObjectSomeValuesFrom>
@@ -653,7 +614,7 @@ This is an ontology of antimicrobial agents based on EpiCura Knowledge</Literal>
     <SubClassOf>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal datatypeIRI="&rdf;PlainLiteral">Administration: boulus intraveineux</Literal>
+            <Literal>Administration: boulus intraveineux</Literal>
         </Annotation>
         <Class IRI="#Aminoglycosides"/>
         <ObjectSomeValuesFrom>
@@ -1836,7 +1797,7 @@ This is an ontology of antimicrobial agents based on EpiCura Knowledge</Literal>
     <SubClassOf>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal datatypeIRI="&rdf;PlainLiteral">R�actions allergiques cutan�es</Literal>
+            <Literal>R�actions allergiques cutan�es</Literal>
         </Annotation>
         <Class IRI="#Fosfomycin"/>
         <ObjectSomeValuesFrom>
@@ -1880,7 +1841,7 @@ This is an ontology of antimicrobial agents based on EpiCura Knowledge</Literal>
     <SubClassOf>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal datatypeIRI="&rdf;PlainLiteral">administration : dur�e</Literal>
+            <Literal>administration : dur�e</Literal>
         </Annotation>
         <Class IRI="#Furans"/>
         <ObjectSomeValuesFrom>
@@ -2089,7 +2050,7 @@ This is an ontology of antimicrobial agents based on EpiCura Knowledge</Literal>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Legionella_SP"/>
-        <Class IRI="#Antimicrobial_spectrum"/>
+        <Class IRI="#Antimicrobial_Agents"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Lincosamides"/>
@@ -2102,7 +2063,7 @@ This is an ontology of antimicrobial agents based on EpiCura Knowledge</Literal>
     <SubClassOf>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal datatypeIRI="&rdf;PlainLiteral">administartion : dur�e &gt;4 semaines</Literal>
+            <Literal>administartion : dur�e &gt;4 semaines</Literal>
         </Annotation>
         <Class IRI="#Linezolid"/>
         <ObjectIntersectionOf>
@@ -2119,7 +2080,7 @@ This is an ontology of antimicrobial agents based on EpiCura Knowledge</Literal>
     <SubClassOf>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal datatypeIRI="&rdf;PlainLiteral">administartion : dur�e &gt;4 semaines</Literal>
+            <Literal>administartion : dur�e &gt;4 semaines</Literal>
         </Annotation>
         <Class IRI="#Linezolid"/>
         <ObjectIntersectionOf>
@@ -2136,7 +2097,7 @@ This is an ontology of antimicrobial agents based on EpiCura Knowledge</Literal>
     <SubClassOf>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal datatypeIRI="&rdf;PlainLiteral">administartion : dur�e &gt;4 semaines</Literal>
+            <Literal>administartion : dur�e &gt;4 semaines</Literal>
         </Annotation>
         <Class IRI="#Linezolid"/>
         <ObjectIntersectionOf>
@@ -2246,7 +2207,7 @@ This is an ontology of antimicrobial agents based on EpiCura Knowledge</Literal>
     <SubClassOf>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal datatypeIRI="&rdf;PlainLiteral">r�versibles</Literal>
+            <Literal>r�versibles</Literal>
         </Annotation>
         <Class IRI="#Macrolides"/>
         <ObjectSomeValuesFrom>
@@ -2257,7 +2218,7 @@ This is an ontology of antimicrobial agents based on EpiCura Knowledge</Literal>
     <SubClassOf>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal datatypeIRI="&rdf;PlainLiteral">Administration : dose</Literal>
+            <Literal>Administration : dose</Literal>
         </Annotation>
         <Class IRI="#Macrolides"/>
         <ObjectSomeValuesFrom>
@@ -2268,7 +2229,7 @@ This is an ontology of antimicrobial agents based on EpiCura Knowledge</Literal>
     <SubClassOf>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal datatypeIRI="&rdf;PlainLiteral">Administration : Injection intraveineuse trop rapide</Literal>
+            <Literal>Administration : Injection intraveineuse trop rapide</Literal>
         </Annotation>
         <Class IRI="#Macrolides"/>
         <ObjectSomeValuesFrom>
@@ -2281,87 +2242,6 @@ This is an ontology of antimicrobial agents based on EpiCura Knowledge</Literal>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#Hasadverse_Effect"/>
             <Class IRI="#SNC_Troubles"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Mero/Inipenem"/>
-        <Class IRI="#Carbapenems"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Mero/Inipenem"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#Is_effective_against"/>
-            <Class IRI="#Anaerobes"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Mero/Inipenem"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#Is_effective_against"/>
-            <Class IRI="#BLSE"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Mero/Inipenem"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#Is_effective_against"/>
-            <Class IRI="#Campylobactar"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Mero/Inipenem"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#Is_effective_against"/>
-            <Class IRI="#Enterobacteria"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Mero/Inipenem"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#Is_effective_against"/>
-            <Class IRI="#Haemophilus_influenza"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Mero/Inipenem"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#Is_effective_against"/>
-            <Class IRI="#Moraxella"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Mero/Inipenem"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#Is_effective_against"/>
-            <Class IRI="#Neisseria_gnorrhoeae"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Mero/Inipenem"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#Is_effective_against"/>
-            <Class IRI="#Nocardia"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Mero/Inipenem"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#Is_effective_against"/>
-            <Class IRI="#Pseudomonas_aeruginosa"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Mero/Inipenem"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#Is_effective_against"/>
-            <Class IRI="#Spirochete"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Mero/Inipenem"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#Is_effective_against"/>
-            <Class IRI="#Staphylococcus_aureus"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -2403,7 +2283,7 @@ This is an ontology of antimicrobial agents based on EpiCura Knowledge</Literal>
     <SubClassOf>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal datatypeIRI="&rdf;PlainLiteral">Administration : dur�e
+            <Literal>Administration : dur�e
 </Literal>
         </Annotation>
         <Class IRI="#Metronidazole"/>
@@ -2627,7 +2507,7 @@ This is an ontology of antimicrobial agents based on EpiCura Knowledge</Literal>
     <SubClassOf>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal datatypeIRI="&rdf;PlainLiteral">administration dur�e</Literal>
+            <Literal>administration dur�e</Literal>
         </Annotation>
         <Class IRI="#Nitrofurantoin"/>
         <ObjectSomeValuesFrom>
@@ -2645,7 +2525,7 @@ This is an ontology of antimicrobial agents based on EpiCura Knowledge</Literal>
     <SubClassOf>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal datatypeIRI="&rdf;PlainLiteral">administration : dur�e</Literal>
+            <Literal>administration : dur�e</Literal>
         </Annotation>
         <Class IRI="#Nitrofurantoin"/>
         <ObjectSomeValuesFrom>
@@ -2999,7 +2879,7 @@ This is an ontology of antimicrobial agents based on EpiCura Knowledge</Literal>
     <SubClassOf>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal datatypeIRI="&rdf;PlainLiteral">Aggravation</Literal>
+            <Literal>Aggravation</Literal>
         </Annotation>
         <Class IRI="#Quinolones"/>
         <ObjectSomeValuesFrom>
@@ -3050,7 +2930,7 @@ This is an ontology of antimicrobial agents based on EpiCura Knowledge</Literal>
     <SubClassOf>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal datatypeIRI="&rdf;PlainLiteral">Administration : dose</Literal>
+            <Literal>Administration : dose</Literal>
         </Annotation>
         <Class IRI="#Rifampicin"/>
         <ObjectSomeValuesFrom>
@@ -3155,7 +3035,7 @@ This is an ontology of antimicrobial agents based on EpiCura Knowledge</Literal>
     <SubClassOf>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal datatypeIRI="&rdf;PlainLiteral">insuffisance r�nale et femme enceinte
+            <Literal>insuffisance r�nale et femme enceinte
 </Literal>
         </Annotation>
         <Class IRI="#Tetracyclines"/>
@@ -3167,7 +3047,7 @@ This is an ontology of antimicrobial agents based on EpiCura Knowledge</Literal>
     <SubClassOf>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal datatypeIRI="&rdf;PlainLiteral">R�versible</Literal>
+            <Literal>R�versible</Literal>
         </Annotation>
         <Class IRI="#Tetracyclines"/>
         <ObjectSomeValuesFrom>
@@ -3328,12 +3208,116 @@ This is an ontology of antimicrobial agents based on EpiCura Knowledge</Literal>
         <Class IRI="#lactic_acidosis"/>
         <Class IRI="#Adverse_effects"/>
     </SubClassOf>
-    <DisjointClasses>
+    <SubClassOf>
         <Class IRI="#1stgeneration"/>
+        <Class IRI="#Cephalosporins"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#2ndgeneration"/>
+        <Class IRI="#Cephalosporins"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#3rdgeneration"/>
+        <Class IRI="#Cephalosporins"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#4thgeneration"/>
-    </DisjointClasses>
+        <Class IRI="#Cephalosporins"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#4thgeneration"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#Hasadverse_Effect"/>
+                <Class IRI="#SNC_Troubles"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#A_indicateur"/>
+                <Class IRI="#Grave_1"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mero/Inipenem"/>
+        <Class IRI="#Carbapenems"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mero/Inipenem"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Anaerobes"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mero/Inipenem"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#BLSE"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mero/Inipenem"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Campylobactar"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mero/Inipenem"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Enterobacteria"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mero/Inipenem"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Haemophilus_influenza"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mero/Inipenem"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Moraxella"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mero/Inipenem"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Neisseria_gnorrhoeae"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mero/Inipenem"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Nocardia"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mero/Inipenem"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Pseudomonas_aeruginosa"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mero/Inipenem"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Spirochete"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mero/Inipenem"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Is_effective_against"/>
+            <Class IRI="#Staphylococcus_aureus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
     <DisjointClasses>
         <Class IRI="#Administration_initial"/>
         <Class IRI="#Adverse_effects"/>
@@ -3401,6 +3385,12 @@ This is an ontology of antimicrobial agents based on EpiCura Knowledge</Literal>
         <Class IRI="#Mechanism_of_action"/>
         <Class IRI="#Weightiness"/>
     </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#1stgeneration"/>
+        <Class IRI="#2ndgeneration"/>
+        <Class IRI="#3rdgeneration"/>
+        <Class IRI="#4thgeneration"/>
+    </DisjointClasses>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#A_administration"/>
         <ObjectProperty IRI="#Initiale_admin"/>
@@ -3438,21 +3428,33 @@ This is an ontology of antimicrobial agents based on EpiCura Knowledge</Literal>
         <ObjectProperty IRI="#Action_Mechanism"/>
     </SubObjectPropertyOf>
     <InverseObjectProperties>
-        <ObjectProperty IRI="#Est_administration_de"/>
         <ObjectProperty IRI="#A_administration"/>
+        <ObjectProperty IRI="#Est_administration_de"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="#Hasadverse_Effect"/>
         <ObjectProperty IRI="#IsAdverse_Effect_of"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="#Ismechanism_of_action_of"/>
         <ObjectProperty IRI="#Hasmechanism_of_action"/>
+        <ObjectProperty IRI="#Ismechanism_of_action_of"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="#Is_effective_against"/>
         <ObjectProperty IRI="#Is_affected_by"/>
+        <ObjectProperty IRI="#Is_effective_against"/>
     </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#Is_affected_by"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#Is_effective_against"/>
+    </FunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#Is_affected_by"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#Is_effective_against"/>
+    </InverseFunctionalObjectProperty>
     <TransitiveObjectProperty>
         <ObjectProperty IRI="#Hasadverse_Effect"/>
     </TransitiveObjectProperty>
@@ -3560,55 +3562,55 @@ This is an ontology of antimicrobial agents based on EpiCura Knowledge</Literal>
     <DataPropertyRange>
         <DataProperty IRI="#Availability"/>
         <DataOneOf>
-            <Literal datatypeIRI="&xsd;string">non</Literal>
-            <Literal datatypeIRI="&xsd;string">oui</Literal>
+            <Literal>non</Literal>
+            <Literal>oui</Literal>
         </DataOneOf>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#Condition_administration"/>
         <DataOneOf>
-            <Literal datatypeIRI="&xsd;string">dose</Literal>
-            <Literal datatypeIRI="&xsd;string">duree</Literal>
-            <Literal datatypeIRI="&xsd;string">frequence</Literal>
-            <Literal datatypeIRI="&xsd;string">general</Literal>
-            <Literal datatypeIRI="&xsd;string">voie</Literal>
+            <Literal>dose</Literal>
+            <Literal>duree</Literal>
+            <Literal>frequence</Literal>
+            <Literal>general</Literal>
+            <Literal>voie</Literal>
         </DataOneOf>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#Gravite"/>
         <DataOneOf>
-            <Literal datatypeIRI="&xsd;string">1</Literal>
-            <Literal datatypeIRI="&xsd;string">2</Literal>
+            <Literal>1</Literal>
+            <Literal>2</Literal>
         </DataOneOf>
     </DataPropertyRange>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Ceftazidime</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">ne couvre pas le pneumocoque</Literal>
+        <Literal>ne couvre pas le pneumocoque</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Enterobacteria</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Exemple : Klebs pneumo</Literal>
+        <Literal>Exemple : Klebs pneumo</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Tendonitis</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Arthralgies, rupture tendineuse</Literal>
+        <Literal>Arthralgies, rupture tendineuse</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#lactic_acidosis</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">lactic acidosis</Literal>
+        <Literal>lactic acidosis</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>xsd:language</AbbreviatedIRI>
-        <Literal datatypeIRI="&xsd;language">Pills,Creme,IV,IM</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#language">Pills,Creme,IV,IM</Literal>
     </AnnotationAssertion>
 </Ontology>
 
 
 
-<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
 

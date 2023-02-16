@@ -1,5 +1,0 @@
-@prefix : <http://www.example.org/test-owl/> .
-:john    rdf:type           :Man .
-:Man    rdfs:subClassOf    :Human .
-:john    :livesIn  "New-York" .
-:livesIn    rdf:type    rdf:Property .

@@ -1,3 +1,4 @@
+Prefix(:=<http://www.semanticweb.org/souhir/ontologies/diagnostic#>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
 Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
 Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
@@ -7,146 +8,298 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 Ontology(<http://www.semanticweb.org/souhir/ontologies/diagnostic>
 
-Declaration(Class(<http://www.semanticweb.org/souhir/ontologies/diagnostic#ABCES_PULMONAIRE_EXTRA_HOSPITALIER>))
-AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/souhir/ontologies/diagnostic#ABCES_PULMONAIRE_EXTRA_HOSPITALIER> "ABCÈS PULMONAIRE EXTRA-HOSPITALIER")
-SubClassOf(<http://www.semanticweb.org/souhir/ontologies/diagnostic#ABCES_PULMONAIRE_EXTRA_HOSPITALIER> <http://www.semanticweb.org/souhir/ontologies/diagnostic#Infections_des_voies_respiratoires>)
-SubClassOf(<http://www.semanticweb.org/souhir/ontologies/diagnostic#ABCES_PULMONAIRE_EXTRA_HOSPITALIER> ObjectSomeValuesFrom(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Est_cause_par> <http://www.semanticweb.org/souhir/ontologies/diagnostic#Anaerobes>))
-SubClassOf(Annotation(rdfs:comment "Vérifier équivalence") <http://www.semanticweb.org/souhir/ontologies/diagnostic#ABCES_PULMONAIRE_EXTRA_HOSPITALIER> ObjectSomeValuesFrom(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Est_cause_par> <http://www.semanticweb.org/souhir/ontologies/diagnostic#Flore_mixte_guideline>))
-Declaration(Class(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Anaerobes>))
-SubClassOf(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Anaerobes> <http://www.semanticweb.org/souhir/ontologies/diagnostic#Germes>)
-Declaration(Class(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Cap1>))
-AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/souhir/ontologies/diagnostic#Cap1> "CAP 1 = PNEUMONIE, PATIENT AMBULANT SANS FACTEURS DE COMORBIDITÉ")
-SubClassOf(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Cap1> <http://www.semanticweb.org/souhir/ontologies/diagnostic#PNEUMONIE_ACQUISE_DANS_LA_COMMUNAUTE_CAP>)
-Declaration(Class(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Cap2>))
-AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/souhir/ontologies/diagnostic#Cap2> "CAP 2 = PNEUMONIE, PATIENT AMBULANT AVEC FACTEURS DE COMORBIDITÉ MAIS SÉVÉRITÉ NE REQUIERT PAS HOSPITALISATION")
-SubClassOf(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Cap2> <http://www.semanticweb.org/souhir/ontologies/diagnostic#PNEUMONIE_ACQUISE_DANS_LA_COMMUNAUTE_CAP>)
-SubClassOf(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Cap2> ObjectSomeValuesFrom(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Est_cause_par> <http://www.semanticweb.org/souhir/ontologies/diagnostic#Haemophilus_influenza>))
-Declaration(Class(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Cap3>))
-AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/souhir/ontologies/diagnostic#Cap3> "CAP 3 = PNEUMONIE, HOSPITALISATION REQUISE PAR DEGRÉ DE SÉVÉRITÉ")
-SubClassOf(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Cap3> <http://www.semanticweb.org/souhir/ontologies/diagnostic#PNEUMONIE_ACQUISE_DANS_LA_COMMUNAUTE_CAP>)
-SubClassOf(Annotation(rdfs:comment "Vérifier l'équivalence") <http://www.semanticweb.org/souhir/ontologies/diagnostic#Cap3> ObjectSomeValuesFrom(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Est_cause_par> <http://www.semanticweb.org/souhir/ontologies/diagnostic#Enterobacteria>))
-SubClassOf(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Cap3> ObjectSomeValuesFrom(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Est_cause_par> <http://www.semanticweb.org/souhir/ontologies/diagnostic#Haemophilus_influenza>))
-SubClassOf(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Cap3> ObjectSomeValuesFrom(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Est_cause_par> <http://www.semanticweb.org/souhir/ontologies/diagnostic#Staphylococcus_aureus>))
-Declaration(Class(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Cap4>))
-AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/souhir/ontologies/diagnostic#Cap4> "CAP 4 = PNEUMONIE, HOSPITALISATION REQUISE EN SOINS INTENSIFS")
-SubClassOf(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Cap4> <http://www.semanticweb.org/souhir/ontologies/diagnostic#PNEUMONIE_ACQUISE_DANS_LA_COMMUNAUTE_CAP>)
-SubClassOf(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Cap4> ObjectSomeValuesFrom(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Est_cause_par> <http://www.semanticweb.org/souhir/ontologies/diagnostic#Haemophilus_influenza>))
-SubClassOf(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Cap4> ObjectSomeValuesFrom(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Est_cause_par> <http://www.semanticweb.org/souhir/ontologies/diagnostic#Legionella_SP>))
-SubClassOf(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Cap4> ObjectSomeValuesFrom(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Est_cause_par> <http://www.semanticweb.org/souhir/ontologies/diagnostic#Mycoplasma>))
-Declaration(Class(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Chlamydia>))
-SubClassOf(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Chlamydia> <http://www.semanticweb.org/souhir/ontologies/diagnostic#Germes>)
-Declaration(Class(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Clostridium_difficile>))
-SubClassOf(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Clostridium_difficile> <http://www.semanticweb.org/souhir/ontologies/diagnostic#Germes>)
-Declaration(Class(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Diagnostic>))
-Declaration(Class(<http://www.semanticweb.org/souhir/ontologies/diagnostic#EMPYEME_PLEURAL_EXTRA_HOSPITALIER>))
-AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/souhir/ontologies/diagnostic#EMPYEME_PLEURAL_EXTRA_HOSPITALIER> "EMPYÈME PLEURAL EXTRA-HOSPITALIER")
-SubClassOf(<http://www.semanticweb.org/souhir/ontologies/diagnostic#EMPYEME_PLEURAL_EXTRA_HOSPITALIER> <http://www.semanticweb.org/souhir/ontologies/diagnostic#Infections_des_voies_respiratoires>)
-SubClassOf(<http://www.semanticweb.org/souhir/ontologies/diagnostic#EMPYEME_PLEURAL_EXTRA_HOSPITALIER> ObjectSomeValuesFrom(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Est_cause_par> <http://www.semanticweb.org/souhir/ontologies/diagnostic#Anaerobes>))
-SubClassOf(Annotation(rdfs:comment "Vérifier équivalence") <http://www.semanticweb.org/souhir/ontologies/diagnostic#EMPYEME_PLEURAL_EXTRA_HOSPITALIER> ObjectSomeValuesFrom(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Est_cause_par> <http://www.semanticweb.org/souhir/ontologies/diagnostic#Flore_mixte_guideline>))
-Declaration(Class(<http://www.semanticweb.org/souhir/ontologies/diagnostic#EXACERBATION_DE_BRONCHITE_CHRONIQUE_CHEZ_BRONCHITEUX_SEVERE>))
-AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/souhir/ontologies/diagnostic#EXACERBATION_DE_BRONCHITE_CHRONIQUE_CHEZ_BRONCHITEUX_SEVERE> "EXACERBATION DE BRONCHITE CHRONIQUE CHEZ BRONCHITEUX SEVERE AVEC DYSPNEE ET AUGMENTATION DE VISCOSITE, PURULENCE ET VOLUME DES EXPECTORATIONS")
-SubClassOf(<http://www.semanticweb.org/souhir/ontologies/diagnostic#EXACERBATION_DE_BRONCHITE_CHRONIQUE_CHEZ_BRONCHITEUX_SEVERE> <http://www.semanticweb.org/souhir/ontologies/diagnostic#Infections_des_voies_respiratoires>)
-SubClassOf(<http://www.semanticweb.org/souhir/ontologies/diagnostic#EXACERBATION_DE_BRONCHITE_CHRONIQUE_CHEZ_BRONCHITEUX_SEVERE> ObjectSomeValuesFrom(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Est_cause_par> <http://www.semanticweb.org/souhir/ontologies/diagnostic#Haemophilus_influenza>))
-SubClassOf(Annotation(rdfs:comment "Vérifier l'équivalence avec un autre germe") <http://www.semanticweb.org/souhir/ontologies/diagnostic#EXACERBATION_DE_BRONCHITE_CHRONIQUE_CHEZ_BRONCHITEUX_SEVERE> ObjectSomeValuesFrom(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Est_cause_par> <http://www.semanticweb.org/souhir/ontologies/diagnostic#Moraxella>))
-SubClassOf(<http://www.semanticweb.org/souhir/ontologies/diagnostic#EXACERBATION_DE_BRONCHITE_CHRONIQUE_CHEZ_BRONCHITEUX_SEVERE> ObjectSomeValuesFrom(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Est_cause_par> <http://www.semanticweb.org/souhir/ontologies/diagnostic#Streptococcus_pneumiae>))
-Declaration(Class(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Enterobacteria>))
-SubClassOf(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Enterobacteria> <http://www.semanticweb.org/souhir/ontologies/diagnostic#Germes>)
-Declaration(Class(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Enterococci>))
-SubClassOf(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Enterococci> <http://www.semanticweb.org/souhir/ontologies/diagnostic#Germes>)
-Declaration(Class(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Enterrococcus_faecalis>))
-SubClassOf(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Enterrococcus_faecalis> <http://www.semanticweb.org/souhir/ontologies/diagnostic#Germes>)
-Declaration(Class(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Enterrococcus_faecium>))
-SubClassOf(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Enterrococcus_faecium> <http://www.semanticweb.org/souhir/ontologies/diagnostic#Germes>)
-Declaration(Class(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Flore_mixte_guideline>))
-SubClassOf(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Flore_mixte_guideline> <http://www.semanticweb.org/souhir/ontologies/diagnostic#Germes>)
-Declaration(Class(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Germes>))
-Declaration(Class(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Gram_Negative>))
-SubClassOf(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Gram_Negative> <http://www.semanticweb.org/souhir/ontologies/diagnostic#Germes>)
-Declaration(Class(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Gram_positive>))
-SubClassOf(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Gram_positive> <http://www.semanticweb.org/souhir/ontologies/diagnostic#Germes>)
-Declaration(Class(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Haemophilus_influenza>))
-SubClassOf(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Haemophilus_influenza> <http://www.semanticweb.org/souhir/ontologies/diagnostic#Germes>)
-Declaration(Class(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Infections_de_l_appareil_digestif>))
-SubClassOf(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Infections_de_l_appareil_digestif> <http://www.semanticweb.org/souhir/ontologies/diagnostic#Diagnostic>)
-Declaration(Class(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Infections_de_la_sphere_ORL>))
-SubClassOf(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Infections_de_la_sphere_ORL> <http://www.semanticweb.org/souhir/ontologies/diagnostic#Diagnostic>)
-Declaration(Class(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Infections_des_tessus_mous>))
-SubClassOf(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Infections_des_tessus_mous> <http://www.semanticweb.org/souhir/ontologies/diagnostic#Diagnostic>)
-Declaration(Class(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Infections_des_voies_respiratoires>))
-SubClassOf(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Infections_des_voies_respiratoires> <http://www.semanticweb.org/souhir/ontologies/diagnostic#Diagnostic>)
-Declaration(Class(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Infections_des_voies_respiratoires_basses_intra_hospitalieres>))
-AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/souhir/ontologies/diagnostic#Infections_des_voies_respiratoires_basses_intra_hospitalieres> "Infections des voies respiratoires basses intra-hospitalières (HAP et VAP)")
-SubClassOf(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Infections_des_voies_respiratoires_basses_intra_hospitalieres> <http://www.semanticweb.org/souhir/ontologies/diagnostic#Infections_des_voies_respiratoires>)
-SubClassOf(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Infections_des_voies_respiratoires_basses_intra_hospitalieres> ObjectSomeValuesFrom(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Est_cause_par> <http://www.semanticweb.org/souhir/ontologies/diagnostic#Enterobacteria>))
-SubClassOf(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Infections_des_voies_respiratoires_basses_intra_hospitalieres> ObjectSomeValuesFrom(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Est_cause_par> <http://www.semanticweb.org/souhir/ontologies/diagnostic#Haemophilus_influenza>))
-SubClassOf(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Infections_des_voies_respiratoires_basses_intra_hospitalieres> ObjectSomeValuesFrom(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Est_cause_par> <http://www.semanticweb.org/souhir/ontologies/diagnostic#Staphylococcus_aureus>))
-SubClassOf(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Infections_des_voies_respiratoires_basses_intra_hospitalieres> ObjectSomeValuesFrom(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Est_cause_par> <http://www.semanticweb.org/souhir/ontologies/diagnostic#Streptococcus_pneumiae>))
-SubClassOf(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Infections_des_voies_respiratoires_basses_intra_hospitalieres> ObjectSomeValuesFrom(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Est_cause_par> <http://www.semanticweb.org/souhir/ontologies/diagnostic#Streptocoques_Guideline>))
-Declaration(Class(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Infections_des_voies_urinaires>))
-SubClassOf(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Infections_des_voies_urinaires> <http://www.semanticweb.org/souhir/ontologies/diagnostic#Diagnostic>)
-Declaration(Class(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Klebs_pneumo_guideline>))
-SubClassOf(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Klebs_pneumo_guideline> <http://www.semanticweb.org/souhir/ontologies/diagnostic#Germes>)
-Declaration(Class(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Legionella_SP>))
-SubClassOf(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Legionella_SP> <http://www.semanticweb.org/souhir/ontologies/diagnostic#Germes>)
-Declaration(Class(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Listeria_monocytogenes>))
-SubClassOf(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Listeria_monocytogenes> <http://www.semanticweb.org/souhir/ontologies/diagnostic#Germes>)
-Declaration(Class(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Moraxella>))
-SubClassOf(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Moraxella> <http://www.semanticweb.org/souhir/ontologies/diagnostic#Germes>)
-Declaration(Class(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Mycoplasma>))
-SubClassOf(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Mycoplasma> <http://www.semanticweb.org/souhir/ontologies/diagnostic#Germes>)
-Declaration(Class(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Neisseria_gnorrhoeae>))
-SubClassOf(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Neisseria_gnorrhoeae> <http://www.semanticweb.org/souhir/ontologies/diagnostic#Germes>)
-Declaration(Class(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Nocardia>))
-SubClassOf(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Nocardia> <http://www.semanticweb.org/souhir/ontologies/diagnostic#Germes>)
-Declaration(Class(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Organe>))
-Declaration(Class(<http://www.semanticweb.org/souhir/ontologies/diagnostic#PNEUMONIE_ACQUISE_DANS_LA_COMMUNAUTE_CAP>))
-AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/souhir/ontologies/diagnostic#PNEUMONIE_ACQUISE_DANS_LA_COMMUNAUTE_CAP> "PNEUMONIE ACQUISE DANS LA COMMUNAUTE (CAP)")
-SubClassOf(<http://www.semanticweb.org/souhir/ontologies/diagnostic#PNEUMONIE_ACQUISE_DANS_LA_COMMUNAUTE_CAP> <http://www.semanticweb.org/souhir/ontologies/diagnostic#Infections_des_voies_respiratoires>)
-SubClassOf(<http://www.semanticweb.org/souhir/ontologies/diagnostic#PNEUMONIE_ACQUISE_DANS_LA_COMMUNAUTE_CAP> ObjectSomeValuesFrom(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Est_cause_par> <http://www.semanticweb.org/souhir/ontologies/diagnostic#Streptococcus_pneumiae>))
-Declaration(Class(<http://www.semanticweb.org/souhir/ontologies/diagnostic#PNEUMONIE_DE_FAUSSE_DEGLUTITION_EXTRA_HOSPITALIERE>))
-AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/souhir/ontologies/diagnostic#PNEUMONIE_DE_FAUSSE_DEGLUTITION_EXTRA_HOSPITALIERE> "PNEUMONIE DE « FAUSSE DÉGLUTITION » EXTRA-HOSPITALIÈRE")
-SubClassOf(<http://www.semanticweb.org/souhir/ontologies/diagnostic#PNEUMONIE_DE_FAUSSE_DEGLUTITION_EXTRA_HOSPITALIERE> <http://www.semanticweb.org/souhir/ontologies/diagnostic#Infections_des_voies_respiratoires>)
-SubClassOf(<http://www.semanticweb.org/souhir/ontologies/diagnostic#PNEUMONIE_DE_FAUSSE_DEGLUTITION_EXTRA_HOSPITALIERE> ObjectSomeValuesFrom(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Est_cause_par> <http://www.semanticweb.org/souhir/ontologies/diagnostic#Enterobacteria>))
-SubClassOf(<http://www.semanticweb.org/souhir/ontologies/diagnostic#PNEUMONIE_DE_FAUSSE_DEGLUTITION_EXTRA_HOSPITALIERE> ObjectSomeValuesFrom(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Est_cause_par> <http://www.semanticweb.org/souhir/ontologies/diagnostic#Haemophilus_influenza>))
-SubClassOf(Annotation(rdfs:comment "vérifier équivalence") <http://www.semanticweb.org/souhir/ontologies/diagnostic#PNEUMONIE_DE_FAUSSE_DEGLUTITION_EXTRA_HOSPITALIERE> ObjectSomeValuesFrom(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Est_cause_par> <http://www.semanticweb.org/souhir/ontologies/diagnostic#Staphylococcus_aureus>))
-SubClassOf(<http://www.semanticweb.org/souhir/ontologies/diagnostic#PNEUMONIE_DE_FAUSSE_DEGLUTITION_EXTRA_HOSPITALIERE> ObjectSomeValuesFrom(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Est_cause_par> <http://www.semanticweb.org/souhir/ontologies/diagnostic#Streptococcus_pneumiae>))
-SubClassOf(Annotation(rdfs:comment "Vérifier equivalence") <http://www.semanticweb.org/souhir/ontologies/diagnostic#PNEUMONIE_DE_FAUSSE_DEGLUTITION_EXTRA_HOSPITALIERE> ObjectSomeValuesFrom(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Est_cause_par> <http://www.semanticweb.org/souhir/ontologies/diagnostic#Streptocoques_Guideline>))
-Declaration(Class(<http://www.semanticweb.org/souhir/ontologies/diagnostic#PNEUMONIE_INTRA_HOSPITALIERE_HAP_AVEC_ANTIBIOTHERAPIE_PREALABLE_OU_AU_RESPIRATEUR_VAP>))
-AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/souhir/ontologies/diagnostic#PNEUMONIE_INTRA_HOSPITALIERE_HAP_AVEC_ANTIBIOTHERAPIE_PREALABLE_OU_AU_RESPIRATEUR_VAP> "PNEUMONIE INTRA-HOSPITALIERE (HAP) AVEC ANTIBIOTHERAPIE PREALABLE OU AU
+Declaration(Class(:ABCES_PULMONAIRE_EXTRA_HOSPITALIER))
+Declaration(Class(:Anaerobes))
+Declaration(Class(:Cap1))
+Declaration(Class(:Cap2))
+Declaration(Class(:Cap3))
+Declaration(Class(:Cap4))
+Declaration(Class(:Chlamydia))
+Declaration(Class(:Clostridium_difficile))
+Declaration(Class(:Diagnostic))
+Declaration(Class(:EMPYEME_PLEURAL_EXTRA_HOSPITALIER))
+Declaration(Class(:EXACERBATION_DE_BRONCHITE_CHRONIQUE_CHEZ_BRONCHITEUX_SEVERE))
+Declaration(Class(:Enterobacteria))
+Declaration(Class(:Enterococci))
+Declaration(Class(:Enterrococcus_faecalis))
+Declaration(Class(:Enterrococcus_faecium))
+Declaration(Class(:Flore_mixte_guideline))
+Declaration(Class(:Germes))
+Declaration(Class(:Gram_Negative))
+Declaration(Class(:Gram_positive))
+Declaration(Class(:Haemophilus_influenza))
+Declaration(Class(:Infections_de_l_appareil_digestif))
+Declaration(Class(:Infections_de_la_sphere_ORL))
+Declaration(Class(:Infections_des_tessus_mous))
+Declaration(Class(:Infections_des_voies_respiratoires))
+Declaration(Class(:Infections_des_voies_respiratoires_basses_intra_hospitalieres))
+Declaration(Class(:Infections_des_voies_urinaires))
+Declaration(Class(:Klebs_pneumo_guideline))
+Declaration(Class(:Legionella_SP))
+Declaration(Class(:Listeria_monocytogenes))
+Declaration(Class(:Moraxella))
+Declaration(Class(:Mycoplasma))
+Declaration(Class(:Neisseria_gnorrhoeae))
+Declaration(Class(:Nocardia))
+Declaration(Class(:Organe))
+Declaration(Class(:PNEUMONIE_ACQUISE_DANS_LA_COMMUNAUTE_CAP))
+Declaration(Class(:PNEUMONIE_DE_FAUSSE_DEGLUTITION_EXTRA_HOSPITALIERE))
+Declaration(Class(:PNEUMONIE_INTRA_HOSPITALIERE_HAP_AVEC_ANTIBIOTHERAPIE_PREALABLE_OU_AU_RESPIRATEUR_VAP))
+Declaration(Class(:PNEUMONIE_INTRA_HOSPITALIERE_HAP_SANS_ANTIBIOTHERAPIE_PREALABLE))
+Declaration(Class(:Pneumocystis))
+Declaration(Class(:Pseudomonas_aeruginosa))
+Declaration(Class(:Spirochete))
+Declaration(Class(:Staphylococcus_aureus))
+Declaration(Class(:Staphylococcus_epidermidis))
+Declaration(Class(:Staphylocoques_dore_guideline))
+Declaration(Class(:Streptococcus_pneumiae))
+Declaration(Class(:Streptocoques_Guideline))
+Declaration(Class(:Vibrio_Cholerae))
+Declaration(Class(:syphilis))
+Declaration(ObjectProperty(:Cause))
+Declaration(ObjectProperty(:Est_cause_par))
+
+############################
+#   Object Properties
+############################
+
+# Object Property: :Cause (:Cause)
+
+InverseObjectProperties(:Cause :Est_cause_par)
+InverseFunctionalObjectProperty(:Cause)
+ObjectPropertyDomain(:Cause :Germes)
+ObjectPropertyRange(:Cause :Diagnostic)
+
+# Object Property: :Est_cause_par (:Est_cause_par)
+
+FunctionalObjectProperty(:Est_cause_par)
+ObjectPropertyDomain(:Est_cause_par :Diagnostic)
+ObjectPropertyRange(:Est_cause_par :Germes)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: :ABCES_PULMONAIRE_EXTRA_HOSPITALIER (:ABCES_PULMONAIRE_EXTRA_HOSPITALIER)
+
+AnnotationAssertion(rdfs:comment :ABCES_PULMONAIRE_EXTRA_HOSPITALIER "ABCÈS PULMONAIRE EXTRA-HOSPITALIER")
+SubClassOf(:ABCES_PULMONAIRE_EXTRA_HOSPITALIER :Infections_des_voies_respiratoires)
+SubClassOf(:ABCES_PULMONAIRE_EXTRA_HOSPITALIER ObjectSomeValuesFrom(:Est_cause_par :Anaerobes))
+SubClassOf(Annotation(rdfs:comment "Vérifier équivalence") :ABCES_PULMONAIRE_EXTRA_HOSPITALIER ObjectSomeValuesFrom(:Est_cause_par :Flore_mixte_guideline))
+
+# Class: :Anaerobes (:Anaerobes)
+
+SubClassOf(:Anaerobes :Germes)
+
+# Class: :Cap1 (:Cap1)
+
+AnnotationAssertion(rdfs:comment :Cap1 "CAP 1 = PNEUMONIE, PATIENT AMBULANT SANS FACTEURS DE COMORBIDITÉ")
+SubClassOf(:Cap1 :PNEUMONIE_ACQUISE_DANS_LA_COMMUNAUTE_CAP)
+
+# Class: :Cap2 (:Cap2)
+
+AnnotationAssertion(rdfs:comment :Cap2 "CAP 2 = PNEUMONIE, PATIENT AMBULANT AVEC FACTEURS DE COMORBIDITÉ MAIS SÉVÉRITÉ NE REQUIERT PAS HOSPITALISATION")
+SubClassOf(:Cap2 :PNEUMONIE_ACQUISE_DANS_LA_COMMUNAUTE_CAP)
+SubClassOf(:Cap2 ObjectSomeValuesFrom(:Est_cause_par :Haemophilus_influenza))
+
+# Class: :Cap3 (:Cap3)
+
+AnnotationAssertion(rdfs:comment :Cap3 "CAP 3 = PNEUMONIE, HOSPITALISATION REQUISE PAR DEGRÉ DE SÉVÉRITÉ")
+SubClassOf(:Cap3 :PNEUMONIE_ACQUISE_DANS_LA_COMMUNAUTE_CAP)
+SubClassOf(Annotation(rdfs:comment "Vérifier l'équivalence") :Cap3 ObjectSomeValuesFrom(:Est_cause_par :Enterobacteria))
+SubClassOf(:Cap3 ObjectSomeValuesFrom(:Est_cause_par :Haemophilus_influenza))
+SubClassOf(:Cap3 ObjectSomeValuesFrom(:Est_cause_par :Staphylococcus_aureus))
+
+# Class: :Cap4 (:Cap4)
+
+AnnotationAssertion(rdfs:comment :Cap4 "CAP 4 = PNEUMONIE, HOSPITALISATION REQUISE EN SOINS INTENSIFS")
+SubClassOf(:Cap4 :PNEUMONIE_ACQUISE_DANS_LA_COMMUNAUTE_CAP)
+SubClassOf(:Cap4 ObjectSomeValuesFrom(:Est_cause_par :Haemophilus_influenza))
+SubClassOf(:Cap4 ObjectSomeValuesFrom(:Est_cause_par :Legionella_SP))
+SubClassOf(:Cap4 ObjectSomeValuesFrom(:Est_cause_par :Mycoplasma))
+
+# Class: :Chlamydia (:Chlamydia)
+
+SubClassOf(:Chlamydia :Germes)
+
+# Class: :Clostridium_difficile (:Clostridium_difficile)
+
+SubClassOf(:Clostridium_difficile :Germes)
+
+# Class: :EMPYEME_PLEURAL_EXTRA_HOSPITALIER (:EMPYEME_PLEURAL_EXTRA_HOSPITALIER)
+
+AnnotationAssertion(rdfs:comment :EMPYEME_PLEURAL_EXTRA_HOSPITALIER "EMPYÈME PLEURAL EXTRA-HOSPITALIER")
+SubClassOf(:EMPYEME_PLEURAL_EXTRA_HOSPITALIER :Infections_des_voies_respiratoires)
+SubClassOf(:EMPYEME_PLEURAL_EXTRA_HOSPITALIER ObjectSomeValuesFrom(:Est_cause_par :Anaerobes))
+SubClassOf(Annotation(rdfs:comment "Vérifier équivalence") :EMPYEME_PLEURAL_EXTRA_HOSPITALIER ObjectSomeValuesFrom(:Est_cause_par :Flore_mixte_guideline))
+
+# Class: :EXACERBATION_DE_BRONCHITE_CHRONIQUE_CHEZ_BRONCHITEUX_SEVERE (:EXACERBATION_DE_BRONCHITE_CHRONIQUE_CHEZ_BRONCHITEUX_SEVERE)
+
+AnnotationAssertion(rdfs:comment :EXACERBATION_DE_BRONCHITE_CHRONIQUE_CHEZ_BRONCHITEUX_SEVERE "EXACERBATION DE BRONCHITE CHRONIQUE CHEZ BRONCHITEUX SEVERE AVEC DYSPNEE ET AUGMENTATION DE VISCOSITE, PURULENCE ET VOLUME DES EXPECTORATIONS")
+SubClassOf(:EXACERBATION_DE_BRONCHITE_CHRONIQUE_CHEZ_BRONCHITEUX_SEVERE :Infections_des_voies_respiratoires)
+SubClassOf(:EXACERBATION_DE_BRONCHITE_CHRONIQUE_CHEZ_BRONCHITEUX_SEVERE ObjectSomeValuesFrom(:Est_cause_par :Haemophilus_influenza))
+SubClassOf(Annotation(rdfs:comment "Vérifier l'équivalence avec un autre germe") :EXACERBATION_DE_BRONCHITE_CHRONIQUE_CHEZ_BRONCHITEUX_SEVERE ObjectSomeValuesFrom(:Est_cause_par :Moraxella))
+SubClassOf(:EXACERBATION_DE_BRONCHITE_CHRONIQUE_CHEZ_BRONCHITEUX_SEVERE ObjectSomeValuesFrom(:Est_cause_par :Streptococcus_pneumiae))
+
+# Class: :Enterobacteria (:Enterobacteria)
+
+SubClassOf(:Enterobacteria :Germes)
+
+# Class: :Enterococci (:Enterococci)
+
+SubClassOf(:Enterococci :Germes)
+
+# Class: :Enterrococcus_faecalis (:Enterrococcus_faecalis)
+
+SubClassOf(:Enterrococcus_faecalis :Germes)
+
+# Class: :Enterrococcus_faecium (:Enterrococcus_faecium)
+
+SubClassOf(:Enterrococcus_faecium :Germes)
+
+# Class: :Flore_mixte_guideline (:Flore_mixte_guideline)
+
+SubClassOf(:Flore_mixte_guideline :Germes)
+
+# Class: :Gram_Negative (:Gram_Negative)
+
+SubClassOf(:Gram_Negative :Germes)
+
+# Class: :Gram_positive (:Gram_positive)
+
+SubClassOf(:Gram_positive :Germes)
+
+# Class: :Haemophilus_influenza (:Haemophilus_influenza)
+
+SubClassOf(:Haemophilus_influenza :Germes)
+
+# Class: :Infections_de_l_appareil_digestif (:Infections_de_l_appareil_digestif)
+
+SubClassOf(:Infections_de_l_appareil_digestif :Diagnostic)
+
+# Class: :Infections_de_la_sphere_ORL (:Infections_de_la_sphere_ORL)
+
+SubClassOf(:Infections_de_la_sphere_ORL :Diagnostic)
+
+# Class: :Infections_des_tessus_mous (:Infections_des_tessus_mous)
+
+SubClassOf(:Infections_des_tessus_mous :Diagnostic)
+
+# Class: :Infections_des_voies_respiratoires (:Infections_des_voies_respiratoires)
+
+SubClassOf(:Infections_des_voies_respiratoires :Diagnostic)
+
+# Class: :Infections_des_voies_respiratoires_basses_intra_hospitalieres (:Infections_des_voies_respiratoires_basses_intra_hospitalieres)
+
+AnnotationAssertion(rdfs:comment :Infections_des_voies_respiratoires_basses_intra_hospitalieres "Infections des voies respiratoires basses intra-hospitalières (HAP et VAP)")
+SubClassOf(:Infections_des_voies_respiratoires_basses_intra_hospitalieres :Infections_des_voies_respiratoires)
+SubClassOf(:Infections_des_voies_respiratoires_basses_intra_hospitalieres ObjectSomeValuesFrom(:Est_cause_par :Enterobacteria))
+SubClassOf(:Infections_des_voies_respiratoires_basses_intra_hospitalieres ObjectSomeValuesFrom(:Est_cause_par :Haemophilus_influenza))
+SubClassOf(:Infections_des_voies_respiratoires_basses_intra_hospitalieres ObjectSomeValuesFrom(:Est_cause_par :Staphylococcus_aureus))
+SubClassOf(:Infections_des_voies_respiratoires_basses_intra_hospitalieres ObjectSomeValuesFrom(:Est_cause_par :Streptococcus_pneumiae))
+SubClassOf(:Infections_des_voies_respiratoires_basses_intra_hospitalieres ObjectSomeValuesFrom(:Est_cause_par :Streptocoques_Guideline))
+
+# Class: :Infections_des_voies_urinaires (:Infections_des_voies_urinaires)
+
+SubClassOf(:Infections_des_voies_urinaires :Diagnostic)
+
+# Class: :Klebs_pneumo_guideline (:Klebs_pneumo_guideline)
+
+SubClassOf(:Klebs_pneumo_guideline :Germes)
+
+# Class: :Legionella_SP (:Legionella_SP)
+
+SubClassOf(:Legionella_SP :Germes)
+
+# Class: :Listeria_monocytogenes (:Listeria_monocytogenes)
+
+SubClassOf(:Listeria_monocytogenes :Germes)
+
+# Class: :Moraxella (:Moraxella)
+
+SubClassOf(:Moraxella :Germes)
+
+# Class: :Mycoplasma (:Mycoplasma)
+
+SubClassOf(:Mycoplasma :Germes)
+
+# Class: :Neisseria_gnorrhoeae (:Neisseria_gnorrhoeae)
+
+SubClassOf(:Neisseria_gnorrhoeae :Germes)
+
+# Class: :Nocardia (:Nocardia)
+
+SubClassOf(:Nocardia :Germes)
+
+# Class: :PNEUMONIE_ACQUISE_DANS_LA_COMMUNAUTE_CAP (:PNEUMONIE_ACQUISE_DANS_LA_COMMUNAUTE_CAP)
+
+AnnotationAssertion(rdfs:comment :PNEUMONIE_ACQUISE_DANS_LA_COMMUNAUTE_CAP "PNEUMONIE ACQUISE DANS LA COMMUNAUTE (CAP)")
+SubClassOf(:PNEUMONIE_ACQUISE_DANS_LA_COMMUNAUTE_CAP :Infections_des_voies_respiratoires)
+SubClassOf(:PNEUMONIE_ACQUISE_DANS_LA_COMMUNAUTE_CAP ObjectSomeValuesFrom(:Est_cause_par :Streptococcus_pneumiae))
+
+# Class: :PNEUMONIE_DE_FAUSSE_DEGLUTITION_EXTRA_HOSPITALIERE (:PNEUMONIE_DE_FAUSSE_DEGLUTITION_EXTRA_HOSPITALIERE)
+
+AnnotationAssertion(rdfs:comment :PNEUMONIE_DE_FAUSSE_DEGLUTITION_EXTRA_HOSPITALIERE "PNEUMONIE DE « FAUSSE DÉGLUTITION » EXTRA-HOSPITALIÈRE")
+SubClassOf(:PNEUMONIE_DE_FAUSSE_DEGLUTITION_EXTRA_HOSPITALIERE :Infections_des_voies_respiratoires)
+SubClassOf(:PNEUMONIE_DE_FAUSSE_DEGLUTITION_EXTRA_HOSPITALIERE ObjectSomeValuesFrom(:Est_cause_par :Enterobacteria))
+SubClassOf(:PNEUMONIE_DE_FAUSSE_DEGLUTITION_EXTRA_HOSPITALIERE ObjectSomeValuesFrom(:Est_cause_par :Haemophilus_influenza))
+SubClassOf(Annotation(rdfs:comment "vérifier équivalence") :PNEUMONIE_DE_FAUSSE_DEGLUTITION_EXTRA_HOSPITALIERE ObjectSomeValuesFrom(:Est_cause_par :Staphylococcus_aureus))
+SubClassOf(:PNEUMONIE_DE_FAUSSE_DEGLUTITION_EXTRA_HOSPITALIERE ObjectSomeValuesFrom(:Est_cause_par :Streptococcus_pneumiae))
+SubClassOf(Annotation(rdfs:comment "Vérifier equivalence") :PNEUMONIE_DE_FAUSSE_DEGLUTITION_EXTRA_HOSPITALIERE ObjectSomeValuesFrom(:Est_cause_par :Streptocoques_Guideline))
+
+# Class: :PNEUMONIE_INTRA_HOSPITALIERE_HAP_AVEC_ANTIBIOTHERAPIE_PREALABLE_OU_AU_RESPIRATEUR_VAP (:PNEUMONIE_INTRA_HOSPITALIERE_HAP_AVEC_ANTIBIOTHERAPIE_PREALABLE_OU_AU_RESPIRATEUR_VAP)
+
+AnnotationAssertion(rdfs:comment :PNEUMONIE_INTRA_HOSPITALIERE_HAP_AVEC_ANTIBIOTHERAPIE_PREALABLE_OU_AU_RESPIRATEUR_VAP "PNEUMONIE INTRA-HOSPITALIERE (HAP) AVEC ANTIBIOTHERAPIE PREALABLE OU AU
 RESPIRATEUR (VAP)")
-SubClassOf(<http://www.semanticweb.org/souhir/ontologies/diagnostic#PNEUMONIE_INTRA_HOSPITALIERE_HAP_AVEC_ANTIBIOTHERAPIE_PREALABLE_OU_AU_RESPIRATEUR_VAP> <http://www.semanticweb.org/souhir/ontologies/diagnostic#Infections_des_voies_respiratoires_basses_intra_hospitalieres>)
-SubClassOf(<http://www.semanticweb.org/souhir/ontologies/diagnostic#PNEUMONIE_INTRA_HOSPITALIERE_HAP_AVEC_ANTIBIOTHERAPIE_PREALABLE_OU_AU_RESPIRATEUR_VAP> ObjectSomeValuesFrom(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Est_cause_par> <http://www.semanticweb.org/souhir/ontologies/diagnostic#Pseudomonas_aeruginosa>))
-Declaration(Class(<http://www.semanticweb.org/souhir/ontologies/diagnostic#PNEUMONIE_INTRA_HOSPITALIERE_HAP_SANS_ANTIBIOTHERAPIE_PREALABLE>))
-AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/souhir/ontologies/diagnostic#PNEUMONIE_INTRA_HOSPITALIERE_HAP_SANS_ANTIBIOTHERAPIE_PREALABLE> "PNEUMONIE INTRA-HOSPITALIERE (HAP) (HOSPI >5 JOURS, OU HOSPITALISATION DANS LES DEUX MOIS PRECEDANT) SANS ANTIBIOTHERAPIE PREALABLE")
-SubClassOf(<http://www.semanticweb.org/souhir/ontologies/diagnostic#PNEUMONIE_INTRA_HOSPITALIERE_HAP_SANS_ANTIBIOTHERAPIE_PREALABLE> <http://www.semanticweb.org/souhir/ontologies/diagnostic#Infections_des_voies_respiratoires_basses_intra_hospitalieres>)
-Declaration(Class(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Pneumocystis>))
-SubClassOf(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Pneumocystis> <http://www.semanticweb.org/souhir/ontologies/diagnostic#Germes>)
-Declaration(Class(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Pseudomonas_aeruginosa>))
-SubClassOf(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Pseudomonas_aeruginosa> <http://www.semanticweb.org/souhir/ontologies/diagnostic#Germes>)
-Declaration(Class(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Spirochete>))
-SubClassOf(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Spirochete> <http://www.semanticweb.org/souhir/ontologies/diagnostic#Germes>)
-Declaration(Class(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Staphylococcus_aureus>))
-SubClassOf(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Staphylococcus_aureus> <http://www.semanticweb.org/souhir/ontologies/diagnostic#Germes>)
-Declaration(Class(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Staphylococcus_epidermidis>))
-SubClassOf(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Staphylococcus_epidermidis> <http://www.semanticweb.org/souhir/ontologies/diagnostic#Germes>)
-Declaration(Class(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Staphylocoques_dore_guideline>))
-SubClassOf(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Staphylocoques_dore_guideline> <http://www.semanticweb.org/souhir/ontologies/diagnostic#Germes>)
-Declaration(Class(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Streptococcus_pneumiae>))
-SubClassOf(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Streptococcus_pneumiae> <http://www.semanticweb.org/souhir/ontologies/diagnostic#Germes>)
-Declaration(Class(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Streptocoques_Guideline>))
-SubClassOf(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Streptocoques_Guideline> <http://www.semanticweb.org/souhir/ontologies/diagnostic#Germes>)
-Declaration(Class(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Vibrio_Cholerae>))
-SubClassOf(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Vibrio_Cholerae> <http://www.semanticweb.org/souhir/ontologies/diagnostic#Germes>)
-Declaration(Class(<http://www.semanticweb.org/souhir/ontologies/diagnostic#syphilis>))
-SubClassOf(<http://www.semanticweb.org/souhir/ontologies/diagnostic#syphilis> <http://www.semanticweb.org/souhir/ontologies/diagnostic#Germes>)
-Declaration(ObjectProperty(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Cause>))
-InverseObjectProperties(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Est_cause_par> <http://www.semanticweb.org/souhir/ontologies/diagnostic#Cause>)
-InverseFunctionalObjectProperty(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Cause>)
-ObjectPropertyDomain(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Cause> <http://www.semanticweb.org/souhir/ontologies/diagnostic#Germes>)
-ObjectPropertyRange(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Cause> <http://www.semanticweb.org/souhir/ontologies/diagnostic#Diagnostic>)
-Declaration(ObjectProperty(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Est_cause_par>))
-InverseObjectProperties(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Est_cause_par> <http://www.semanticweb.org/souhir/ontologies/diagnostic#Cause>)
-InverseFunctionalObjectProperty(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Est_cause_par>)
-ObjectPropertyDomain(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Est_cause_par> <http://www.semanticweb.org/souhir/ontologies/diagnostic#Diagnostic>)
-ObjectPropertyRange(<http://www.semanticweb.org/souhir/ontologies/diagnostic#Est_cause_par> <http://www.semanticweb.org/souhir/ontologies/diagnostic#Germes>)
+SubClassOf(:PNEUMONIE_INTRA_HOSPITALIERE_HAP_AVEC_ANTIBIOTHERAPIE_PREALABLE_OU_AU_RESPIRATEUR_VAP :Infections_des_voies_respiratoires_basses_intra_hospitalieres)
+SubClassOf(:PNEUMONIE_INTRA_HOSPITALIERE_HAP_AVEC_ANTIBIOTHERAPIE_PREALABLE_OU_AU_RESPIRATEUR_VAP ObjectSomeValuesFrom(:Est_cause_par :Pseudomonas_aeruginosa))
+
+# Class: :PNEUMONIE_INTRA_HOSPITALIERE_HAP_SANS_ANTIBIOTHERAPIE_PREALABLE (:PNEUMONIE_INTRA_HOSPITALIERE_HAP_SANS_ANTIBIOTHERAPIE_PREALABLE)
+
+AnnotationAssertion(rdfs:comment :PNEUMONIE_INTRA_HOSPITALIERE_HAP_SANS_ANTIBIOTHERAPIE_PREALABLE "PNEUMONIE INTRA-HOSPITALIERE (HAP) (HOSPI >5 JOURS, OU HOSPITALISATION DANS LES DEUX MOIS PRECEDANT) SANS ANTIBIOTHERAPIE PREALABLE")
+SubClassOf(:PNEUMONIE_INTRA_HOSPITALIERE_HAP_SANS_ANTIBIOTHERAPIE_PREALABLE :Infections_des_voies_respiratoires_basses_intra_hospitalieres)
+
+# Class: :Pneumocystis (:Pneumocystis)
+
+SubClassOf(:Pneumocystis :Germes)
+
+# Class: :Pseudomonas_aeruginosa (:Pseudomonas_aeruginosa)
+
+SubClassOf(:Pseudomonas_aeruginosa :Germes)
+
+# Class: :Spirochete (:Spirochete)
+
+SubClassOf(:Spirochete :Germes)
+
+# Class: :Staphylococcus_aureus (:Staphylococcus_aureus)
+
+SubClassOf(:Staphylococcus_aureus :Germes)
+
+# Class: :Staphylococcus_epidermidis (:Staphylococcus_epidermidis)
+
+SubClassOf(:Staphylococcus_epidermidis :Germes)
+
+# Class: :Staphylocoques_dore_guideline (:Staphylocoques_dore_guideline)
+
+SubClassOf(:Staphylocoques_dore_guideline :Germes)
+
+# Class: :Streptococcus_pneumiae (:Streptococcus_pneumiae)
+
+SubClassOf(:Streptococcus_pneumiae :Germes)
+
+# Class: :Streptocoques_Guideline (:Streptocoques_Guideline)
+
+SubClassOf(:Streptocoques_Guideline :Germes)
+
+# Class: :Vibrio_Cholerae (:Vibrio_Cholerae)
+
+SubClassOf(:Vibrio_Cholerae :Germes)
+
+# Class: :syphilis (:syphilis)
+
+SubClassOf(:syphilis :Germes)
+
+
 )
