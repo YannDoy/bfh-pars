@@ -3446,9 +3446,6 @@ This is an ontology of antimicrobial agents based on EpiCura Knowledge</Literal>
     <FunctionalObjectProperty>
         <ObjectProperty IRI="#Is_affected_by"/>
     </FunctionalObjectProperty>
-    <FunctionalObjectProperty>
-        <ObjectProperty IRI="#Is_effective_against"/>
-    </FunctionalObjectProperty>
     <InverseFunctionalObjectProperty>
         <ObjectProperty IRI="#Is_affected_by"/>
     </InverseFunctionalObjectProperty>
@@ -3460,6 +3457,9 @@ This is an ontology of antimicrobial agents based on EpiCura Knowledge</Literal>
     </TransitiveObjectProperty>
     <TransitiveObjectProperty>
         <ObjectProperty IRI="#Hasmechanism_of_action"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#Is_effective_against"/>
     </TransitiveObjectProperty>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#A_administration"/>

@@ -548,12 +548,6 @@
         <ObjectProperty IRI="#Cause"/>
         <ObjectProperty IRI="#Est_cause_par"/>
     </InverseObjectProperties>
-    <InverseFunctionalObjectProperty>
-        <ObjectProperty IRI="#Cause"/>
-    </InverseFunctionalObjectProperty>
-    <InverseFunctionalObjectProperty>
-        <ObjectProperty IRI="#Est_cause_par"/>
-    </InverseFunctionalObjectProperty>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#Cause"/>
         <Class IRI="#Germes"/>
